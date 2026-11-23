@@ -1,0 +1,5081 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piojitos Kids | Catálogo Digital & Moda Infantil Futurista - Huancayo</title>
+  <meta name="description" content="Piojitos Kids: Fabricación y comercialización de chompas y moda infantil de alta tecnología térmica en Huancayo, Perú. Catálogo digital interactivo, transmisiones en vivo en TikTok y pedidos por WhatsApp.">
+  <meta name="author" content="Mario Sanchez - Piojitos Kids">
+  <meta name="theme-color" content="#060919">
+
+  <!-- Tipografía Geométrica Futurista: Space Grotesk & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       1. VARIABLES DE DISEÑO & SISTEMA VISUAL FUTURISTA (CYBER-KNIT)
+       ========================================================================== */
+    :root {
+      /* Paleta Base Futurista & Espacial */
+      --bg-space: #060919;
+      --bg-space-deep: #03050d;
+      --bg-surface: rgba(13, 20, 44, 0.72);
+      --bg-surface-elevated: rgba(20, 31, 68, 0.85);
+      --bg-glass-card: rgba(16, 26, 58, 0.65);
+      --bg-glass-hover: rgba(24, 38, 82, 0.82);
+
+      /* Neón, Gradientes & Acentos Eléctricos */
+      --color-primary-blue: #0066FF;
+      --color-electric-blue: #0A84FF;
+      --color-cyber-violet: #8B5CF6;
+      --color-deep-violet: #7928CA;
+      --color-neon-cyan: #00F0FF;
+      --color-neon-mint: #00FFA3;
+      --color-neon-magenta: #FF007F;
+      --color-neon-amber: #FFB800;
+
+      /* Escala Neutra y Blanco Puro */
+      --color-white: #FFFFFF;
+      --color-text-main: #F8FAFC;
+      --color-text-muted: #94A3B8;
+      --color-text-dim: #64748B;
+      --color-border-subtle: rgba(255, 255, 255, 0.09);
+      --color-border-glow: rgba(0, 240, 255, 0.35);
+
+      /* Redes & Canales */
+      --color-whatsapp: #25D366;
+      --color-whatsapp-glow: rgba(37, 211, 102, 0.4);
+      --color-tiktok: #FE2C55;
+      --color-tiktok-cyan: #25F4EE;
+
+      /* Gradientes Temáticos */
+      --grad-cyber-primary: linear-gradient(135deg, #0066FF 0%, #7928CA 100%);
+      --grad-neon-aurora: linear-gradient(135deg, #00F0FF 0%, #8B5CF6 50%, #FF007F 100%);
+      --grad-electric-cyan: linear-gradient(135deg, #00F0FF 0%, #0066FF 100%);
+      --grad-violet-magenta: linear-gradient(135deg, #8B5CF6 0%, #FF007F 100%);
+      --grad-dark-card: linear-gradient(180deg, rgba(22, 33, 72, 0.75) 0%, rgba(10, 16, 38, 0.85) 100%);
+      --grad-border-glow: linear-gradient(135deg, rgba(0, 240, 255, 0.5), rgba(139, 92, 246, 0.2), rgba(0, 102, 255, 0.5));
+
+      /* Sombras & Brillos Suaves Neón */
+      --shadow-neon-cyan: 0 0 24px rgba(0, 240, 255, 0.32);
+      --shadow-neon-blue: 0 0 32px rgba(0, 102, 255, 0.42);
+      --shadow-neon-violet: 0 0 30px rgba(139, 92, 246, 0.38);
+      --shadow-card: 0 16px 36px -10px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(255, 255, 255, 0.08);
+      --shadow-card-hover: 0 22px 48px -10px rgba(0, 102, 255, 0.3), 0 0 0 1px rgba(0, 240, 255, 0.45);
+
+      /* Tipografía */
+      --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+      /* Bordes y Geometría */
+      --radius-xs: 6px;
+      --radius-sm: 10px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-xl: 32px;
+      --radius-full: 9999px;
+
+      /* Transiciones Fluidas */
+      --trans-fast: 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+      --trans-normal: 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+      --trans-spring: 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    /* ==========================================================================
+       2. RESET, BASE & EFECTO DE REJILLA DIGITAL EN FONDO
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--color-text-main);
+      background-color: var(--bg-space);
+      background-image: 
+        radial-gradient(circle at 15% 20%, rgba(0, 102, 255, 0.16) 0%, transparent 45%),
+        radial-gradient(circle at 85% 65%, rgba(121, 40, 202, 0.18) 0%, transparent 50%),
+        radial-gradient(circle at 50% 90%, rgba(0, 240, 255, 0.12) 0%, transparent 40%),
+        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+      background-size: 100% 100%, 100% 100%, 100% 100%, 48px 48px, 48px 48px;
+      background-attachment: fixed;
+      line-height: 1.6;
+      min-height: 100vh;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Barra de scroll estilizada */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--bg-space);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(139, 92, 246, 0.35);
+      border-radius: var(--radius-full);
+      border: 2px solid var(--bg-space);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--color-neon-cyan);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      background: none;
+      border: none;
+      font-family: inherit;
+      color: inherit;
+      cursor: pointer;
+      outline: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Tipografía de Encabezados */
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-display);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+
+    .text-gradient {
+      background: var(--grad-neon-aurora);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+    }
+
+    .text-gradient-cyan {
+      background: var(--grad-electric-cyan);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+    }
+
+    /* Insignias HUD Cyber */
+    .hud-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 0.85rem;
+      border-radius: var(--radius-full);
+      background: rgba(0, 240, 255, 0.08);
+      border: 1px solid rgba(0, 240, 255, 0.3);
+      color: var(--color-neon-cyan);
+      font-family: var(--font-display);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      box-shadow: 0 0 16px rgba(0, 240, 255, 0.15);
+    }
+
+    .hud-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--color-neon-cyan);
+      box-shadow: 0 0 8px var(--color-neon-cyan);
+      animation: pulse-dot 1.8s infinite ease-in-out;
+    }
+
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.8); }
+    }
+
+    /* Encabezados de Sección */
+    .section-header {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 3.5rem auto;
+      position: relative;
+    }
+    .section-header .hud-badge {
+      margin-bottom: 1rem;
+    }
+    .section-header h2 {
+      font-size: clamp(2rem, 3.8vw, 3rem);
+      margin-bottom: 1rem;
+      color: var(--color-white);
+    }
+    .section-header p {
+      font-size: 1.05rem;
+      color: var(--color-text-muted);
+    }
+
+    /* ==========================================================================
+       3. BOTONES CYBER & MICROINTERACCIONES
+       ========================================================================== */
+    .btn-cyber-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.65rem;
+      padding: 0.85rem 1.75rem;
+      background: var(--grad-cyber-primary);
+      color: var(--color-white);
+      font-family: var(--font-display);
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: var(--shadow-neon-blue);
+      position: relative;
+      overflow: hidden;
+      transition: var(--trans-normal);
+      z-index: 1;
+    }
+    .btn-cyber-primary::before {
+      content: '';
+      position: absolute;
+      top: 0; left: -100%;
+      width: 100%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+      transition: 0.5s;
+      z-index: -1;
+    }
+    .btn-cyber-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 36px rgba(0, 102, 255, 0.65);
+      border-color: var(--color-neon-cyan);
+    }
+    .btn-cyber-primary:hover::before {
+      left: 100%;
+    }
+
+    .btn-cyber-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.65rem;
+      padding: 0.85rem 1.6rem;
+      background: rgba(16, 26, 58, 0.6);
+      color: var(--color-neon-cyan);
+      font-family: var(--font-display);
+      font-size: 0.95rem;
+      font-weight: 600;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(0, 240, 255, 0.4);
+      box-shadow: 0 0 18px rgba(0, 240, 255, 0.15);
+      transition: var(--trans-normal);
+      backdrop-filter: blur(10px);
+    }
+    .btn-cyber-outline:hover {
+      background: rgba(0, 240, 255, 0.15);
+      border-color: var(--color-neon-cyan);
+      box-shadow: var(--shadow-neon-cyan);
+      transform: translateY(-2px);
+      color: var(--color-white);
+    }
+
+    .btn-cyber-wa {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.65rem;
+      padding: 0.85rem 1.65rem;
+      background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+      color: var(--color-white);
+      font-family: var(--font-display);
+      font-size: 0.95rem;
+      font-weight: 600;
+      border-radius: var(--radius-sm);
+      box-shadow: 0 0 24px rgba(37, 211, 102, 0.4);
+      transition: var(--trans-normal);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .btn-cyber-wa:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 35px rgba(37, 211, 102, 0.65);
+    }
+
+    .btn-cyber-tiktok {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.65rem;
+      padding: 0.85rem 1.65rem;
+      background: linear-gradient(135deg, #000000 0%, #18181B 100%);
+      color: var(--color-white);
+      font-family: var(--font-display);
+      font-size: 0.95rem;
+      font-weight: 600;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(254, 44, 85, 0.5);
+      box-shadow: 0 0 20px rgba(254, 44, 85, 0.25);
+      transition: var(--trans-normal);
+    }
+    .btn-cyber-tiktok:hover {
+      border-color: var(--color-tiktok-cyan);
+      box-shadow: -4px 0 20px rgba(37, 244, 238, 0.4), 4px 0 20px rgba(254, 44, 85, 0.4);
+      transform: translateY(-2px);
+    }
+
+    /* ==========================================================================
+       4. NAVBAR (CABECERA FLOTANTE CON GLASSMORPHISM)
+       ========================================================================== */
+    .site-header {
+      position: sticky;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+      padding: 0.9rem 0;
+      background: rgba(6, 9, 25, 0.82);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--color-border-subtle);
+      transition: var(--trans-normal);
+    }
+    .site-header.scrolled {
+      padding: 0.65rem 0;
+      background: rgba(4, 7, 18, 0.94);
+      border-bottom-color: rgba(0, 240, 255, 0.2);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    /* Logotipo Futurista */
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+    }
+    .brand-glyph {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-sm);
+      background: var(--grad-cyber-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 1.15rem;
+      color: var(--color-white);
+      border: 1px solid rgba(0, 240, 255, 0.5);
+      box-shadow: var(--shadow-neon-cyan);
+      position: relative;
+    }
+    .brand-glyph::after {
+      content: '';
+      position: absolute;
+      inset: -2px;
+      border-radius: inherit;
+      border: 1px dashed var(--color-neon-cyan);
+      opacity: 0.6;
+    }
+    .brand-text-wrap {
+      display: flex;
+      flex-direction: column;
+    }
+    .brand-name {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--color-white);
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+    .brand-name span {
+      color: var(--color-neon-cyan);
+    }
+    .brand-tagline {
+      font-size: 0.7rem;
+      color: var(--color-text-muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-family: var(--font-display);
+    }
+
+    /* Enlaces de Navegación */
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+      list-style: none;
+    }
+    .nav-link {
+      font-family: var(--font-display);
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--color-text-muted);
+      transition: var(--trans-fast);
+      position: relative;
+      padding: 0.35rem 0;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: var(--color-neon-cyan);
+      box-shadow: 0 0 8px var(--color-neon-cyan);
+      transition: var(--trans-fast);
+    }
+    .nav-link:hover {
+      color: var(--color-white);
+    }
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+    }
+    .nav-link.active {
+      color: var(--color-neon-cyan);
+    }
+
+    /* Acciones del Navbar */
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+
+    .btn-live-pill {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.4rem 0.85rem;
+      background: rgba(254, 44, 85, 0.12);
+      border: 1px solid rgba(254, 44, 85, 0.4);
+      border-radius: var(--radius-full);
+      color: #FF4E74;
+      font-family: var(--font-display);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      transition: var(--trans-normal);
+    }
+    .btn-live-pill:hover {
+      background: rgba(254, 44, 85, 0.25);
+      box-shadow: 0 0 16px rgba(254, 44, 85, 0.4);
+      color: var(--color-white);
+    }
+    .live-pulse-dot {
+      width: 8px;
+      height: 8px;
+      background: #FE2C55;
+      border-radius: 50%;
+      box-shadow: 0 0 8px #FE2C55;
+      animation: pulse-dot 1.4s infinite;
+    }
+
+    .btn-metrics-hud {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      border-radius: var(--radius-sm);
+      background: rgba(16, 26, 58, 0.6);
+      border: 1px solid rgba(139, 92, 246, 0.35);
+      color: var(--color-cyber-violet);
+      transition: var(--trans-fast);
+      position: relative;
+    }
+    .btn-metrics-hud:hover {
+      background: rgba(139, 92, 246, 0.2);
+      border-color: var(--color-cyber-violet);
+      color: var(--color-white);
+      box-shadow: var(--shadow-neon-violet);
+    }
+
+    .btn-cart-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.5rem 1.15rem;
+      background: rgba(0, 102, 255, 0.15);
+      border: 1px solid rgba(0, 102, 255, 0.4);
+      border-radius: var(--radius-sm);
+      color: var(--color-white);
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 0.9rem;
+      position: relative;
+      transition: var(--trans-fast);
+    }
+    .btn-cart-nav:hover {
+      background: rgba(0, 102, 255, 0.3);
+      border-color: var(--color-neon-cyan);
+      box-shadow: var(--shadow-neon-cyan);
+    }
+    .cart-badge {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 20px;
+      height: 20px;
+      padding: 0 5px;
+      border-radius: var(--radius-full);
+      background: var(--color-neon-cyan);
+      color: #040817;
+      font-size: 0.75rem;
+      font-weight: 800;
+      box-shadow: 0 0 10px var(--color-neon-cyan);
+    }
+
+    /* Hamburguesa Móvil */
+    .btn-mobile-toggle {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      width: 42px;
+      height: 42px;
+      border-radius: var(--radius-sm);
+      background: rgba(16, 26, 58, 0.6);
+      border: 1px solid var(--color-border-subtle);
+      padding: 9px;
+    }
+    .btn-mobile-toggle span {
+      display: block;
+      height: 2px;
+      width: 100%;
+      background: var(--color-white);
+      border-radius: 2px;
+      transition: var(--trans-normal);
+    }
+    .btn-mobile-toggle.open span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+    .btn-mobile-toggle.open span:nth-child(2) {
+      opacity: 0;
+    }
+    .btn-mobile-toggle.open span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+
+    /* Menú Móvil Desplegable */
+    .mobile-menu {
+      position: fixed;
+      top: 72px;
+      left: 0;
+      width: 100%;
+      height: calc(100vh - 72px);
+      background: rgba(4, 7, 18, 0.96);
+      backdrop-filter: blur(24px);
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      gap: 1.5rem;
+      transform: translateX(100%);
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 99;
+      overflow-y: auto;
+    }
+    .mobile-menu.open {
+      transform: translateX(0);
+    }
+    .mobile-nav-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+    .mobile-nav-links a {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: var(--color-text-main);
+      display: block;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    /* ==========================================================================
+       5. HERO SECTION (EXPERIENCIA DIGITAL FUTURISTA CON 3D CARD & HUD)
+       ========================================================================== */
+    .hero-cyber {
+      position: relative;
+      padding: 6.5rem 0 5rem 0;
+      overflow: hidden;
+      perspective: 1200px;
+    }
+
+    /* Grid Holográfico y Efectos de Fondo */
+    .hero-glow-orb-1 {
+      position: absolute;
+      top: -10%;
+      left: 10%;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0, 102, 255, 0.28) 0%, transparent 70%);
+      filter: blur(60px);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .hero-glow-orb-2 {
+      position: absolute;
+      bottom: -15%;
+      right: 5%;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(139, 92, 246, 0.22) 0%, transparent 70%);
+      filter: blur(70px);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .hero-grid-layout {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      align-items: center;
+      gap: 3.5rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Columna de Texto */
+    .hero-telemetry-bar {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .telemetry-node {
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      color: var(--color-neon-mint);
+      background: rgba(0, 255, 163, 0.08);
+      border: 1px solid rgba(0, 255, 163, 0.25);
+      padding: 0.25rem 0.65rem;
+      border-radius: var(--radius-xs);
+      letter-spacing: 0.06em;
+    }
+
+    .hero-title {
+      font-size: clamp(2.6rem, 4.6vw, 4.2rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.08;
+      margin-bottom: 1.5rem;
+      color: var(--color-white);
+    }
+
+    .hero-desc {
+      font-size: 1.15rem;
+      color: var(--color-text-muted);
+      line-height: 1.7;
+      margin-bottom: 2.25rem;
+      max-width: 580px;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      align-items: center;
+      gap: 1.15rem;
+      flex-wrap: wrap;
+      margin-bottom: 2.75rem;
+    }
+
+    .hero-stats-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .hero-stat-item {
+      display: flex;
+      flex-direction: column;
+    }
+    .hero-stat-value {
+      font-family: var(--font-display);
+      font-size: 1.65rem;
+      font-weight: 700;
+      color: var(--color-white);
+    }
+    .hero-stat-value span {
+      color: var(--color-neon-cyan);
+    }
+    .hero-stat-label {
+      font-size: 0.8rem;
+      color: var(--color-text-muted);
+    }
+
+    /* Columna 3D Holo-Card Showcase */
+    .hero-3d-scene {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .holo-card-container {
+      width: 100%;
+      max-width: 420px;
+      height: 520px;
+      perspective: 1000px;
+    }
+
+    .holo-card {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.15s ease-out;
+      border-radius: var(--radius-lg);
+      background: var(--grad-dark-card);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(0, 240, 255, 0.35);
+      box-shadow: var(--shadow-card-hover), inset 0 0 30px rgba(0, 102, 255, 0.2);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1.85rem;
+      cursor: pointer;
+    }
+
+    /* Borde de Neón Giratorio */
+    .holo-card::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: conic-gradient(transparent, rgba(0, 240, 255, 0.2), transparent, rgba(139, 92, 246, 0.2), transparent);
+      animation: rotate-conic 8s linear infinite;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    @keyframes rotate-conic {
+      100% { transform: rotate(360deg); }
+    }
+
+    .holo-card-inner {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transform: translateZ(40px);
+    }
+
+    .holo-card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .holo-chip {
+      font-family: var(--font-display);
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--color-neon-cyan);
+      background: rgba(0, 240, 255, 0.12);
+      padding: 0.25rem 0.65rem;
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(0, 240, 255, 0.3);
+    }
+    .holo-badge-live {
+      font-family: var(--font-display);
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: var(--color-neon-mint);
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .holo-visual-center {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1.25rem 0;
+      height: 230px;
+    }
+
+    /* Círculos Holográficos Concéntricos en CSS */
+    .holo-rings {
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      border: 1px dashed rgba(0, 240, 255, 0.3);
+      animation: spin-rings 18s linear infinite;
+    }
+    .holo-rings::before {
+      content: '';
+      position: absolute;
+      inset: 15px;
+      border-radius: 50%;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+    }
+
+    @keyframes spin-rings {
+      100% { transform: rotate(360deg); }
+    }
+
+    .holo-product-img {
+      max-height: 200px;
+      width: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.7));
+      transform: translateZ(50px);
+      transition: var(--trans-spring);
+    }
+    .holo-card:hover .holo-product-img {
+      transform: translateZ(75px) scale(1.06);
+    }
+
+    .holo-card-footer {
+      background: rgba(8, 14, 34, 0.85);
+      backdrop-filter: blur(12px);
+      border-radius: var(--radius-md);
+      padding: 1.15rem;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .holo-model-info h4 {
+      font-size: 1.05rem;
+      color: var(--color-white);
+      margin-bottom: 0.2rem;
+    }
+    .holo-model-info span {
+      font-size: 0.78rem;
+      color: var(--color-text-muted);
+    }
+    .holo-price {
+      text-align: right;
+    }
+    .holo-price-val {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--color-neon-cyan);
+    }
+
+    /* ==========================================================================
+       6. COLECCIONES (MUNDOS NEO-KNIT)
+       ========================================================================== */
+    .section-collections {
+      padding: 5rem 0;
+      position: relative;
+    }
+
+    .collections-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+
+    .collection-card {
+      position: relative;
+      background: var(--bg-glass-card);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--color-border-subtle);
+      padding: 1.75rem 1.5rem;
+      overflow: hidden;
+      transition: var(--trans-normal);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+    .collection-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--grad-neon-aurora);
+      opacity: 0;
+      transition: var(--trans-normal);
+    }
+    .collection-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(0, 240, 255, 0.4);
+      background: var(--bg-glass-hover);
+      box-shadow: var(--shadow-card-hover);
+    }
+    .collection-card:hover::before {
+      opacity: 1;
+    }
+
+    .col-icon-box {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-sm);
+      background: rgba(0, 102, 255, 0.12);
+      border: 1px solid rgba(0, 102, 255, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-neon-cyan);
+      margin-bottom: 1.25rem;
+      transition: var(--trans-normal);
+    }
+    .collection-card:hover .col-icon-box {
+      background: var(--grad-cyber-primary);
+      color: var(--color-white);
+      box-shadow: var(--shadow-neon-cyan);
+    }
+
+    .collection-card h3 {
+      font-size: 1.2rem;
+      color: var(--color-white);
+      margin-bottom: 0.65rem;
+    }
+    .collection-card p {
+      font-size: 0.88rem;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+      margin-bottom: 1.25rem;
+    }
+    .col-link-pill {
+      font-family: var(--font-display);
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--color-neon-cyan);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: var(--trans-fast);
+    }
+    .collection-card:hover .col-link-pill {
+      color: var(--color-white);
+      transform: translateX(4px);
+    }
+
+    /* ==========================================================================
+       7. CATÁLOGO DIGITAL (BUSCADOR, FILTROS MULTI-CRITERIO & PRODUCTOS)
+       ========================================================================== */
+    .section-catalog {
+      padding: 5rem 0 6rem 0;
+      position: relative;
+    }
+
+    /* Barra de Control de Filtros & Búsqueda */
+    .catalog-control-panel {
+      background: var(--bg-surface);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--color-border-subtle);
+      padding: 1.75rem;
+      margin-bottom: 2.75rem;
+      box-shadow: var(--shadow-card);
+    }
+
+    .search-filter-row {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Caja de Búsqueda */
+    .search-box-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    .search-icon {
+      position: absolute;
+      left: 1.25rem;
+      color: var(--color-text-muted);
+      pointer-events: none;
+    }
+    .search-input {
+      width: 100%;
+      padding: 0.85rem 2.85rem 0.85rem 3.25rem;
+      background: rgba(7, 12, 30, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: var(--radius-sm);
+      color: var(--color-white);
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      transition: var(--trans-fast);
+      outline: none;
+    }
+    .search-input:focus {
+      border-color: var(--color-neon-cyan);
+      box-shadow: 0 0 16px rgba(0, 240, 255, 0.25);
+      background: rgba(11, 18, 44, 0.85);
+    }
+    .btn-clear-search {
+      position: absolute;
+      right: 1.15rem;
+      color: var(--color-text-dim);
+      font-size: 1.1rem;
+      display: none;
+      transition: var(--trans-fast);
+    }
+    .btn-clear-search:hover {
+      color: var(--color-white);
+    }
+
+    /* Selectores de Orden y Filtro Rápido */
+    .sort-control-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      justify-content: flex-end;
+    }
+    .sort-label {
+      font-family: var(--font-display);
+      font-size: 0.82rem;
+      color: var(--color-text-muted);
+      white-space: nowrap;
+    }
+    .sort-select {
+      background: rgba(7, 12, 30, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: var(--color-white);
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      padding: 0.8rem 1.2rem;
+      border-radius: var(--radius-sm);
+      outline: none;
+      cursor: pointer;
+      transition: var(--trans-fast);
+    }
+    .sort-select:focus {
+      border-color: var(--color-neon-cyan);
+    }
+
+    /* Pestañas de Categoría */
+    .category-pills-row {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+    .category-pill {
+      padding: 0.55rem 1.15rem;
+      border-radius: var(--radius-full);
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      color: var(--color-text-muted);
+      font-family: var(--font-display);
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: var(--trans-fast);
+    }
+    .category-pill:hover {
+      background: rgba(0, 240, 255, 0.1);
+      border-color: rgba(0, 240, 255, 0.3);
+      color: var(--color-white);
+    }
+    .category-pill.active {
+      background: var(--grad-cyber-primary);
+      border-color: rgba(0, 240, 255, 0.5);
+      color: var(--color-white);
+      box-shadow: 0 0 16px rgba(0, 102, 255, 0.45);
+    }
+
+    /* Filtros Avanzados (Talla, Color, Reset) */
+    .advanced-filters-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      padding-top: 1.25rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .filter-group {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+    .filter-group-label {
+      font-family: var(--font-display);
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--color-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .size-chips-wrap, .color-swatches-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      flex-wrap: wrap;
+    }
+    .size-chip-filter {
+      padding: 0.3rem 0.65rem;
+      border-radius: var(--radius-xs);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--color-text-muted);
+      font-size: 0.78rem;
+      font-family: var(--font-display);
+      transition: var(--trans-fast);
+    }
+    .size-chip-filter:hover {
+      border-color: var(--color-neon-cyan);
+      color: var(--color-white);
+    }
+    .size-chip-filter.active {
+      background: var(--color-neon-cyan);
+      color: #040817;
+      border-color: var(--color-neon-cyan);
+      font-weight: 700;
+    }
+
+    .color-swatch-filter {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      border: 2px solid transparent;
+      outline: 1px solid rgba(255, 255, 255, 0.2);
+      cursor: pointer;
+      transition: var(--trans-fast);
+    }
+    .color-swatch-filter:hover {
+      transform: scale(1.15);
+      outline-color: var(--color-neon-cyan);
+    }
+    .color-swatch-filter.active {
+      transform: scale(1.2);
+      outline: 2px solid var(--color-neon-cyan);
+      box-shadow: 0 0 10px var(--color-neon-cyan);
+    }
+
+    .btn-reset-filters {
+      font-family: var(--font-display);
+      font-size: 0.82rem;
+      color: var(--color-text-dim);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      transition: var(--trans-fast);
+      margin-left: auto;
+    }
+    .btn-reset-filters:hover {
+      color: var(--color-neon-magenta);
+    }
+
+    /* Contador de Resultados */
+    .catalog-status-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+    }
+    .catalog-count-info {
+      font-family: var(--font-display);
+      font-size: 0.95rem;
+      color: var(--color-text-muted);
+    }
+    .catalog-count-info span {
+      color: var(--color-white);
+      font-weight: 700;
+    }
+
+    /* Grilla de Productos */
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.85rem;
+    }
+
+    /* Tarjeta de Producto Cyber-Knit con Efecto 3D Hover */
+    .product-card {
+      background: var(--bg-glass-card);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--color-border-subtle);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, border-color 0.25s ease;
+      cursor: pointer;
+    }
+    .product-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(0, 240, 255, 0.45);
+      box-shadow: var(--shadow-card-hover);
+    }
+
+    /* Esquinas Neón Decorativas */
+    .product-card::before, .product-card::after {
+      content: '';
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      pointer-events: none;
+      z-index: 3;
+      opacity: 0;
+      transition: var(--trans-normal);
+    }
+    .product-card::before {
+      top: 6px; left: 6px;
+      border-top: 2px solid var(--color-neon-cyan);
+      border-left: 2px solid var(--color-neon-cyan);
+    }
+    .product-card::after {
+      bottom: 6px; right: 6px;
+      border-bottom: 2px solid var(--color-cyber-violet);
+      border-right: 2px solid var(--color-cyber-violet);
+    }
+    .product-card:hover::before, .product-card:hover::after {
+      opacity: 1;
+    }
+
+    /* Imagen y Badge */
+    .card-media-wrap {
+      position: relative;
+      width: 100%;
+      height: 250px;
+      background: rgba(5, 9, 22, 0.8);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.25rem;
+    }
+    .card-product-img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.6));
+    }
+    .product-card:hover .card-product-img {
+      transform: scale(1.08);
+    }
+
+    .card-badge-tag {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      padding: 0.25rem 0.65rem;
+      background: rgba(16, 26, 58, 0.85);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(0, 240, 255, 0.4);
+      border-radius: var(--radius-xs);
+      font-family: var(--font-display);
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: var(--color-neon-cyan);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      z-index: 2;
+    }
+    .card-category-tag {
+      position: absolute;
+      bottom: 0.85rem;
+      left: 1rem;
+      font-size: 0.72rem;
+      color: var(--color-text-muted);
+      background: rgba(0, 0, 0, 0.6);
+      padding: 0.2rem 0.55rem;
+      border-radius: var(--radius-xs);
+      z-index: 2;
+    }
+
+    /* Información de la Tarjeta */
+    .card-info-wrap {
+      padding: 1.4rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+    .card-title {
+      font-size: 1.15rem;
+      color: var(--color-white);
+      margin-bottom: 0.4rem;
+      line-height: 1.3;
+      transition: var(--trans-fast);
+    }
+    .product-card:hover .card-title {
+      color: var(--color-neon-cyan);
+    }
+
+    .card-desc {
+      font-size: 0.84rem;
+      color: var(--color-text-muted);
+      line-height: 1.5;
+      margin-bottom: 1.15rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* Paleta de Colores en Tarjeta */
+    .card-meta-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.15rem;
+      padding-bottom: 0.85rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .card-colors {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .card-color-dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    .card-sizes-preview {
+      font-family: var(--font-display);
+      font-size: 0.75rem;
+      color: var(--color-text-dim);
+    }
+
+    /* Precio & Botones de Acción */
+    .card-action-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+    .card-price {
+      display: flex;
+      flex-direction: column;
+    }
+    .card-price-label {
+      font-size: 0.7rem;
+      color: var(--color-text-dim);
+      text-transform: uppercase;
+    }
+    .card-price-val {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--color-white);
+    }
+    .card-price-val small {
+      font-size: 0.85rem;
+      color: var(--color-neon-cyan);
+      margin-right: 2px;
+    }
+
+    .card-btns-cluster {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+    }
+    .btn-quick-detail {
+      padding: 0.55rem 0.95rem;
+      background: rgba(0, 102, 255, 0.15);
+      border: 1px solid rgba(0, 102, 255, 0.35);
+      border-radius: var(--radius-xs);
+      color: var(--color-neon-cyan);
+      font-family: var(--font-display);
+      font-size: 0.82rem;
+      font-weight: 600;
+      transition: var(--trans-fast);
+    }
+    .btn-quick-detail:hover {
+      background: var(--color-primary-blue);
+      color: var(--color-white);
+      box-shadow: 0 0 14px rgba(0, 102, 255, 0.5);
+    }
+
+    .btn-quick-add {
+      width: 38px;
+      height: 38px;
+      border-radius: var(--radius-xs);
+      background: var(--grad-cyber-primary);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: var(--color-white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--trans-fast);
+      box-shadow: 0 0 12px rgba(0, 102, 255, 0.3);
+    }
+    .btn-quick-add:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 20px rgba(0, 240, 255, 0.6);
+      border-color: var(--color-neon-cyan);
+    }
+
+    /* Estado Vacío de Búsqueda */
+    .empty-catalog-state {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 4.5rem 1.5rem;
+      background: var(--bg-surface);
+      border-radius: var(--radius-lg);
+      border: 1px dashed rgba(255, 255, 255, 0.15);
+    }
+    .empty-catalog-state svg {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 1.25rem;
+      color: var(--color-text-dim);
+    }
+    .empty-catalog-state h3 {
+      font-size: 1.5rem;
+      color: var(--color-white);
+      margin-bottom: 0.5rem;
+    }
+    .empty-catalog-state p {
+      color: var(--color-text-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    /* ==========================================================================
+       8. MODAL DE DETALLE DE PRODUCTO (VISOR TECNOLÓGICO)
+       ========================================================================== */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(2, 4, 12, 0.85);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+    .modal-backdrop.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .modal-cyber-window {
+      width: 100%;
+      max-width: 940px;
+      max-height: 90vh;
+      overflow-y: auto;
+      background: var(--bg-surface-elevated);
+      border: 1px solid rgba(0, 240, 255, 0.35);
+      border-radius: var(--radius-lg);
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 102, 255, 0.25);
+      position: relative;
+      transform: scale(0.94) translateY(20px);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .modal-backdrop.active .modal-cyber-window {
+      transform: scale(1) translateY(0);
+    }
+
+    .btn-modal-close {
+      position: absolute;
+      top: 1.25rem;
+      right: 1.25rem;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: var(--color-text-muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--trans-fast);
+      z-index: 10;
+    }
+    .btn-modal-close:hover {
+      background: var(--color-neon-magenta);
+      color: var(--color-white);
+      box-shadow: 0 0 16px rgba(255, 0, 127, 0.5);
+    }
+
+    .modal-detail-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 2.5rem;
+      padding: 2.5rem;
+    }
+
+    /* Visor de Imagen en Modal */
+    .modal-visual-col {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+    .modal-image-display {
+      width: 100%;
+      height: 380px;
+      background: rgba(5, 9, 24, 0.9);
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.75rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .modal-image-display img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+      filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.8));
+      transition: transform 0.3s ease;
+    }
+    .modal-image-display:hover img {
+      transform: scale(1.05);
+    }
+
+    .modal-tech-features {
+      background: rgba(8, 14, 34, 0.6);
+      border-radius: var(--radius-sm);
+      padding: 1.15rem;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .modal-tech-features h5 {
+      font-size: 0.82rem;
+      color: var(--color-neon-cyan);
+      margin-bottom: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .tech-specs-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+    }
+    .tech-specs-list li {
+      font-size: 0.82rem;
+      color: var(--color-text-muted);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .tech-specs-list li::before {
+      content: '▹';
+      color: var(--color-neon-cyan);
+    }
+
+    /* Columna de Datos & Selectores */
+    .modal-info-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .modal-product-header {
+      margin-bottom: 1.25rem;
+    }
+    .modal-sku-bar {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.65rem;
+    }
+    .modal-sku {
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      color: var(--color-text-dim);
+    }
+    .modal-title {
+      font-size: 1.85rem;
+      color: var(--color-white);
+      margin-bottom: 0.75rem;
+      line-height: 1.2;
+    }
+    .modal-price-wrap {
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
+      margin-bottom: 1.25rem;
+    }
+    .modal-price-val {
+      font-family: var(--font-display);
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--color-white);
+    }
+    .modal-price-val span {
+      color: var(--color-neon-cyan);
+    }
+    .modal-tax-note {
+      font-size: 0.8rem;
+      color: var(--color-text-dim);
+    }
+
+    .modal-desc {
+      font-size: 0.95rem;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+      margin-bottom: 1.75rem;
+    }
+
+    /* Selector de Tallas */
+    .selector-section {
+      margin-bottom: 1.5rem;
+    }
+    .selector-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.65rem;
+    }
+    .selector-label {
+      font-family: var(--font-display);
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--color-white);
+      text-transform: uppercase;
+    }
+    .selector-selected-val {
+      font-size: 0.82rem;
+      color: var(--color-neon-cyan);
+    }
+
+    .modal-size-grid {
+      display: flex;
+      gap: 0.55rem;
+      flex-wrap: wrap;
+    }
+    .modal-size-btn {
+      padding: 0.55rem 0.95rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: var(--radius-xs);
+      color: var(--color-white);
+      font-family: var(--font-display);
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: var(--trans-fast);
+    }
+    .modal-size-btn:hover {
+      border-color: var(--color-neon-cyan);
+      background: rgba(0, 240, 255, 0.1);
+    }
+    .modal-size-btn.active {
+      background: var(--color-neon-cyan);
+      color: #040817;
+      border-color: var(--color-neon-cyan);
+      box-shadow: 0 0 14px rgba(0, 240, 255, 0.4);
+    }
+
+    /* Selector de Colores */
+    .modal-color-grid {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+    .modal-color-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.45rem 0.85rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: var(--radius-full);
+      color: var(--color-text-muted);
+      font-size: 0.82rem;
+      transition: var(--trans-fast);
+    }
+    .modal-color-swatch {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+    }
+    .modal-color-btn:hover {
+      border-color: var(--color-neon-cyan);
+      color: var(--color-white);
+    }
+    .modal-color-btn.active {
+      border-color: var(--color-neon-cyan);
+      background: rgba(0, 240, 255, 0.12);
+      color: var(--color-white);
+      box-shadow: 0 0 14px rgba(0, 240, 255, 0.25);
+    }
+
+    /* Selector de Cantidad */
+    .quantity-control-row {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .qty-stepper {
+      display: inline-flex;
+      align-items: center;
+      background: rgba(7, 12, 30, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: var(--radius-xs);
+      overflow: hidden;
+    }
+    .btn-qty {
+      width: 38px;
+      height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      color: var(--color-white);
+      transition: var(--trans-fast);
+    }
+    .btn-qty:hover {
+      background: rgba(0, 240, 255, 0.2);
+      color: var(--color-neon-cyan);
+    }
+    .qty-input {
+      width: 48px;
+      text-align: center;
+      background: none;
+      border: none;
+      color: var(--color-white);
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 700;
+      outline: none;
+    }
+    .modal-subtotal-info {
+      font-family: var(--font-display);
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+    }
+    .modal-subtotal-info strong {
+      color: var(--color-neon-cyan);
+      font-size: 1.15rem;
+    }
+
+    /* Botones de Acción en Modal */
+    .modal-actions-cluster {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 1rem;
+    }
+
+    /* ==========================================================================
+       9. TIKTOK EN VIVO (CONEXIÓN DIGITAL & BROADCAST HUB)
+       ========================================================================== */
+    .section-tiktok-live {
+      padding: 5rem 0;
+      position: relative;
+    }
+
+    .live-broadcast-box {
+      background: linear-gradient(135deg, rgba(14, 18, 42, 0.85) 0%, rgba(6, 9, 25, 0.95) 100%);
+      border: 1px solid rgba(254, 44, 85, 0.4);
+      border-radius: var(--radius-xl);
+      padding: 3.5rem;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 40px rgba(254, 44, 85, 0.15);
+    }
+    .live-broadcast-box::before {
+      content: '';
+      position: absolute;
+      top: 0; right: 0;
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(254, 44, 85, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .live-box-layout {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 3rem;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .live-status-header {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      margin-bottom: 1.5rem;
+    }
+    .live-badge-glow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 0.85rem;
+      border-radius: var(--radius-full);
+      background: rgba(254, 44, 85, 0.15);
+      border: 1px solid #FE2C55;
+      color: #FF4E74;
+      font-family: var(--font-display);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      box-shadow: 0 0 16px rgba(254, 44, 85, 0.4);
+    }
+
+    .live-content-col h3 {
+      font-size: clamp(2rem, 3.2vw, 2.75rem);
+      color: var(--color-white);
+      margin-bottom: 1.25rem;
+      line-height: 1.15;
+    }
+    .live-content-col p {
+      font-size: 1.05rem;
+      color: var(--color-text-muted);
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+
+    /* Tarjetas de Canales de TikTok */
+    .tiktok-channels-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+      margin-bottom: 2rem;
+    }
+    .tiktok-channel-card {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius-md);
+      padding: 1.35rem;
+      transition: var(--trans-normal);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .tiktok-channel-card:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(37, 244, 238, 0.5);
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    }
+    .channel-role {
+      font-size: 0.72rem;
+      font-family: var(--font-display);
+      color: var(--color-neon-cyan);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.4rem;
+    }
+    .channel-handle {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--color-white);
+      margin-bottom: 0.85rem;
+    }
+
+    /* Columna Visual de la Señal TikTok */
+    .live-signal-monitor {
+      background: rgba(4, 7, 20, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.8);
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .monitor-telemetry {
+      display: flex;
+      justify-content: space-between;
+      font-family: var(--font-display);
+      font-size: 0.75rem;
+      color: var(--color-text-dim);
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .monitor-telemetry span strong {
+      color: var(--color-neon-mint);
+    }
+
+    .audio-wave-visualizer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      height: 60px;
+    }
+    .wave-bar {
+      width: 4px;
+      height: 15px;
+      background: var(--color-neon-cyan);
+      border-radius: var(--radius-full);
+      animation: wave-bounce 1.2s infinite ease-in-out;
+    }
+    .wave-bar:nth-child(2) { animation-delay: 0.1s; height: 35px; background: #25F4EE; }
+    .wave-bar:nth-child(3) { animation-delay: 0.2s; height: 50px; background: #FE2C55; }
+    .wave-bar:nth-child(4) { animation-delay: 0.3s; height: 25px; background: #0066FF; }
+    .wave-bar:nth-child(5) { animation-delay: 0.4s; height: 45px; background: #8B5CF6; }
+    .wave-bar:nth-child(6) { animation-delay: 0.5s; height: 20px; background: #00FFA3; }
+    .wave-bar:nth-child(7) { animation-delay: 0.6s; height: 40px; background: #25F4EE; }
+
+    @keyframes wave-bounce {
+      0%, 100% { transform: scaleY(0.4); }
+      50% { transform: scaleY(1.3); }
+    }
+
+    .live-broadcast-tips {
+      background: rgba(255, 255, 255, 0.03);
+      padding: 1rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+      border-left: 3px solid var(--color-neon-cyan);
+    }
+
+    /* ==========================================================================
+       10. CÓMO COMPRAR (PROTOCOLO DIGITAL EN 4 PASOS)
+       ========================================================================== */
+    .section-how-to-buy {
+      padding: 5rem 0;
+      position: relative;
+    }
+
+    .protocol-steps-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.75rem;
+      margin-bottom: 3rem;
+      position: relative;
+    }
+
+    .protocol-step-card {
+      background: var(--bg-glass-card);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--color-border-subtle);
+      padding: 2rem 1.6rem;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      transition: var(--trans-normal);
+    }
+    .protocol-step-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(0, 240, 255, 0.4);
+      box-shadow: var(--shadow-card-hover);
+    }
+
+    .step-number-chip {
+      font-family: var(--font-display);
+      font-size: 2.2rem;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 1.25rem;
+      background: var(--grad-neon-aurora);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .protocol-step-card h3 {
+      font-size: 1.15rem;
+      color: var(--color-white);
+      margin-bottom: 0.75rem;
+    }
+    .protocol-step-card p {
+      font-size: 0.88rem;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+    }
+
+    /* Caja de Aclaración Oficial */
+    .clarification-alert-box {
+      background: rgba(16, 26, 58, 0.7);
+      border: 1px solid rgba(0, 240, 255, 0.3);
+      border-radius: var(--radius-md);
+      padding: 1.5rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      backdrop-filter: blur(14px);
+    }
+    .clarification-alert-box svg {
+      width: 32px;
+      height: 32px;
+      color: var(--color-neon-cyan);
+      flex-shrink: 0;
+    }
+    .clarification-alert-box p {
+      font-size: 0.92rem;
+      color: var(--color-text-main);
+      line-height: 1.6;
+    }
+    .clarification-alert-box strong {
+      color: var(--color-neon-cyan);
+    }
+
+    /* ==========================================================================
+       11. NOSOTROS (INFORMACIÓN INSTITUCIONAL VERIFICADA)
+       ========================================================================== */
+    .section-about {
+      padding: 5rem 0;
+      position: relative;
+    }
+
+    .about-cyber-card {
+      background: var(--bg-surface);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--color-border-subtle);
+      padding: 3.5rem;
+      box-shadow: var(--shadow-card);
+    }
+
+    .about-layout {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+
+    .official-quote-box {
+      font-size: 1.25rem;
+      line-height: 1.8;
+      color: var(--color-white);
+      font-weight: 500;
+      margin-bottom: 2rem;
+      position: relative;
+      padding-left: 1.5rem;
+      border-left: 3px solid var(--color-neon-cyan);
+    }
+
+    .about-desc-extra {
+      font-size: 0.95rem;
+      color: var(--color-text-muted);
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+
+    /* Panel de Identidad Corporativa */
+    .company-dossier-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+    }
+    .dossier-item {
+      background: rgba(8, 14, 34, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-sm);
+      padding: 1.15rem;
+    }
+    .dossier-label {
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      color: var(--color-neon-cyan);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.35rem;
+    }
+    .dossier-val {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--color-white);
+    }
+
+    /* Tarjeta Visual de Sede Huancayo */
+    .about-location-display {
+      background: rgba(5, 9, 22, 0.85);
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(0, 240, 255, 0.25);
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      box-shadow: inset 0 0 30px rgba(0, 102, 255, 0.15);
+    }
+    .location-node-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-display);
+      font-size: 0.8rem;
+      color: var(--color-neon-mint);
+    }
+    .location-details h4 {
+      font-size: 1.4rem;
+      color: var(--color-white);
+      margin-bottom: 0.5rem;
+    }
+    .location-details p {
+      font-size: 0.95rem;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+      margin-bottom: 1.25rem;
+    }
+
+    /* ==========================================================================
+       12. CONTACTO (SEDE HUANCAYO & CONSTRUCTOR DE CONSULTA)
+       ========================================================================== */
+    .section-contact {
+      padding: 5rem 0 7rem 0;
+      position: relative;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 3rem;
+    }
+
+    .contact-info-panel {
+      background: var(--bg-surface);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--color-border-subtle);
+      padding: 2.75rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .contact-item-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.15rem;
+      margin-bottom: 1.85rem;
+    }
+    .contact-icon-box {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-sm);
+      background: rgba(0, 102, 255, 0.12);
+      border: 1px solid rgba(0, 102, 255, 0.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-neon-cyan);
+      flex-shrink: 0;
+    }
+    .contact-item-text h4 {
+      font-size: 1rem;
+      color: var(--color-white);
+      margin-bottom: 0.25rem;
+    }
+    .contact-item-text p {
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+    }
+    .contact-item-text a {
+      color: var(--color-neon-cyan);
+      transition: var(--trans-fast);
+    }
+    .contact-item-text a:hover {
+      text-decoration: underline;
+    }
+
+    /* Formulario de Consulta Dinámico */
+    .contact-form-panel {
+      background: var(--bg-surface-elevated);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--color-border-subtle);
+      padding: 2.75rem;
+      box-shadow: var(--shadow-card);
+    }
+    .contact-form-panel h3 {
+      font-size: 1.6rem;
+      color: var(--color-white);
+      margin-bottom: 0.5rem;
+    }
+    .contact-form-panel p {
+      font-size: 0.92rem;
+      color: var(--color-text-muted);
+      margin-bottom: 1.85rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+    .form-label {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--color-text-main);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.45rem;
+    }
+    .form-input, .form-textarea, .form-select {
+      width: 100%;
+      padding: 0.85rem 1.15rem;
+      background: rgba(7, 12, 30, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: var(--radius-sm);
+      color: var(--color-white);
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      transition: var(--trans-fast);
+      outline: none;
+    }
+    .form-input:focus, .form-textarea:focus, .form-select:focus {
+      border-color: var(--color-neon-cyan);
+      box-shadow: 0 0 16px rgba(0, 240, 255, 0.25);
+    }
+    .form-textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    /* ==========================================================================
+       13. DRAWER DE CARRITO DE COMPRAS (SLIDE-OVER INTERACTIVO)
+       ========================================================================== */
+    .cart-drawer-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(2, 4, 12, 0.82);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      z-index: 1050;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+    .cart-drawer-backdrop.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .cart-drawer-panel {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100%;
+      max-width: 480px;
+      height: 100vh;
+      background: rgba(9, 15, 38, 0.96);
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
+      border-left: 1px solid rgba(0, 240, 255, 0.25);
+      box-shadow: -15px 0 50px rgba(0, 0, 0, 0.8);
+      z-index: 1060;
+      transform: translateX(100%);
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+    }
+    .cart-drawer-backdrop.active .cart-drawer-panel {
+      transform: translateX(0);
+    }
+
+    /* Cabecera del Carrito */
+    .cart-header {
+      padding: 1.5rem 1.75rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(5, 8, 22, 0.7);
+    }
+    .cart-header-title {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+    .cart-header-title h3 {
+      font-size: 1.25rem;
+      color: var(--color-white);
+    }
+
+    /* Lista de Items del Carrito */
+    .cart-items-body {
+      padding: 1.5rem 1.75rem;
+      flex-grow: 1;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    /* Item Individual del Carrito */
+    .cart-item-card {
+      background: rgba(14, 22, 52, 0.65);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-sm);
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: 65px 1fr auto;
+      gap: 1rem;
+      align-items: center;
+      transition: var(--trans-fast);
+    }
+    .cart-item-card:hover {
+      border-color: rgba(0, 240, 255, 0.3);
+      background: rgba(18, 30, 70, 0.75);
+    }
+
+    .cart-item-thumb {
+      width: 65px;
+      height: 65px;
+      border-radius: var(--radius-xs);
+      background: rgba(5, 8, 20, 0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+      overflow: hidden;
+    }
+    .cart-item-thumb img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+    }
+
+    .cart-item-details h4 {
+      font-size: 0.95rem;
+      color: var(--color-white);
+      margin-bottom: 0.25rem;
+      line-height: 1.2;
+    }
+    .cart-item-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.78rem;
+      color: var(--color-text-muted);
+      margin-bottom: 0.5rem;
+    }
+    .cart-meta-badge {
+      background: rgba(255, 255, 255, 0.06);
+      padding: 0.15rem 0.45rem;
+      border-radius: 4px;
+      color: var(--color-neon-cyan);
+    }
+
+    .cart-item-stepper {
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .cart-btn-stepper {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      color: var(--color-white);
+    }
+    .cart-btn-stepper:hover {
+      background: rgba(0, 240, 255, 0.2);
+    }
+    .cart-stepper-val {
+      font-family: var(--font-display);
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 0 0.5rem;
+      color: var(--color-white);
+    }
+
+    .cart-item-subtotal-col {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 0.5rem;
+    }
+    .cart-item-subtotal {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--color-neon-cyan);
+    }
+    .btn-remove-item {
+      color: var(--color-text-dim);
+      transition: var(--trans-fast);
+      font-size: 0.85rem;
+    }
+    .btn-remove-item:hover {
+      color: var(--color-neon-magenta);
+    }
+
+    /* Estado Vacío de Carrito */
+    .cart-empty-state {
+      text-align: center;
+      padding: 3.5rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+    .cart-empty-state svg {
+      width: 58px;
+      height: 58px;
+      color: var(--color-text-dim);
+      margin-bottom: 1rem;
+    }
+    .cart-empty-state h4 {
+      font-size: 1.25rem;
+      color: var(--color-white);
+      margin-bottom: 0.5rem;
+    }
+    .cart-empty-state p {
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    /* Formulario de Pedido & Checkout en Carrito */
+    .cart-checkout-section {
+      padding: 1.5rem 1.75rem;
+      background: rgba(5, 8, 22, 0.92);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      flex-direction: column;
+      gap: 1.15rem;
+    }
+
+    .order-form-compact {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .order-form-compact .form-input {
+      padding: 0.65rem 0.85rem;
+      font-size: 0.88rem;
+    }
+
+    .cart-totals-box {
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: var(--radius-sm);
+      padding: 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .totals-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.88rem;
+      color: var(--color-text-muted);
+      margin-bottom: 0.4rem;
+    }
+    .totals-row.grand-total {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--color-white);
+      margin-top: 0.65rem;
+      padding-top: 0.65rem;
+      border-top: 1px dashed rgba(255, 255, 255, 0.12);
+    }
+    .totals-row.grand-total span:last-child {
+      color: var(--color-neon-cyan);
+      font-family: var(--font-display);
+    }
+
+    /* Aviso si WHATSAPP_NUMBER está vacío */
+    .wa-empty-notice {
+      background: rgba(255, 184, 0, 0.12);
+      border: 1px solid rgba(255, 184, 0, 0.35);
+      border-radius: var(--radius-xs);
+      padding: 0.75rem 0.95rem;
+      font-size: 0.8rem;
+      color: #FCD34D;
+      display: flex;
+      gap: 0.65rem;
+      align-items: flex-start;
+      line-height: 1.45;
+    }
+    .wa-empty-notice svg {
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .cart-actions-cluster {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+
+    /* ==========================================================================
+       14. MODAL DE MÉTRICAS & INDICADORES DEMOSTRATIVOS
+       ========================================================================== */
+    .metrics-window {
+      max-width: 680px;
+    }
+    .metrics-header {
+      margin-bottom: 1.5rem;
+    }
+    .metrics-demo-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.25rem 0.65rem;
+      border-radius: var(--radius-xs);
+      background: rgba(139, 92, 246, 0.15);
+      border: 1px solid rgba(139, 92, 246, 0.4);
+      color: var(--color-cyber-violet);
+      font-family: var(--font-display);
+      font-size: 0.75rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .metrics-kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.15rem;
+      margin-bottom: 2rem;
+    }
+    .metric-kpi-card {
+      background: rgba(7, 12, 30, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-sm);
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .metric-kpi-val {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--color-white);
+    }
+    .metric-kpi-val span {
+      color: var(--color-neon-cyan);
+    }
+    .metric-kpi-title {
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+    }
+
+    .metrics-top-products {
+      margin-bottom: 2rem;
+    }
+    .metrics-top-products h4 {
+      font-size: 1.05rem;
+      color: var(--color-white);
+      margin-bottom: 1rem;
+    }
+    .top-products-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+    .top-product-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 0.75rem 1rem;
+      border-radius: var(--radius-xs);
+      font-size: 0.88rem;
+    }
+    .top-product-score {
+      font-family: var(--font-display);
+      font-weight: 700;
+      color: var(--color-neon-mint);
+    }
+
+    .metrics-actions-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 1.25rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    /* ==========================================================================
+       15. NOTIFICACIONES TOAST (FEEDBACK FLOTANTE)
+       ========================================================================== */
+    .toast-container {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 1200;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      pointer-events: none;
+    }
+    .toast-msg {
+      background: rgba(10, 16, 42, 0.95);
+      border: 1px solid var(--color-neon-cyan);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7), 0 0 16px rgba(0, 240, 255, 0.3);
+      color: var(--color-white);
+      padding: 0.85rem 1.35rem;
+      border-radius: var(--radius-sm);
+      font-family: var(--font-display);
+      font-size: 0.88rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      pointer-events: all;
+      animation: toast-in 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    @keyframes toast-in {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    /* ==========================================================================
+       16. PIE DE PÁGINA (LEGAL, HUANCAYO & ENLACES OFICIALES)
+       ========================================================================== */
+    .site-footer {
+      background: var(--bg-space-deep);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 4.5rem 0 2.5rem 0;
+      position: relative;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr repeat(3, 1fr);
+      gap: 3rem;
+      margin-bottom: 3.5rem;
+    }
+    .footer-brand p {
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+      margin: 1rem 0 1.5rem 0;
+      max-width: 320px;
+    }
+
+    .footer-col h4 {
+      font-size: 1.05rem;
+      color: var(--color-white);
+      margin-bottom: 1.25rem;
+      position: relative;
+    }
+    .footer-col h4::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 25px;
+      height: 2px;
+      background: var(--color-neon-cyan);
+    }
+    .footer-links-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+    .footer-links-list a {
+      font-size: 0.88rem;
+      color: var(--color-text-muted);
+      transition: var(--trans-fast);
+    }
+    .footer-links-list a:hover {
+      color: var(--color-neon-cyan);
+      transform: translateX(3px);
+    }
+
+    .footer-bottom-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      font-size: 0.82rem;
+      color: var(--color-text-dim);
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    /* ==========================================================================
+       17. RESPONSIVIDAD (MOBILE, TABLET, DESKTOP)
+       ========================================================================== */
+    @media (max-width: 1024px) {
+      .hero-grid-layout {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 3rem;
+      }
+      .hero-telemetry-bar {
+        justify-content: center;
+      }
+      .hero-desc {
+        margin: 0 auto 2.25rem auto;
+      }
+      .hero-cta-group {
+        justify-content: center;
+      }
+      .hero-stats-row {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      .collections-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .live-box-layout {
+        grid-template-columns: 1fr;
+      }
+      .protocol-steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .about-layout {
+        grid-template-columns: 1fr;
+      }
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links, .btn-live-pill, .btn-metrics-hud {
+        display: none;
+      }
+      .btn-mobile-toggle {
+        display: flex;
+      }
+      .search-filter-row {
+        grid-template-columns: 1fr;
+      }
+      .products-grid {
+        grid-template-columns: 1fr;
+      }
+      .modal-detail-layout {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+      }
+      .modal-image-display {
+        height: 260px;
+      }
+      .tiktok-channels-grid {
+        grid-template-columns: 1fr;
+      }
+      .protocol-steps-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .modal-actions-cluster {
+        grid-template-columns: 1fr;
+      }
+      .clarification-alert-box {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       CABECERA DE NAVEGACIÓN FLOTANTE (GLASSMORPHISM)
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <!-- Logotipo de Marca -->
+      <a href="#inicio" class="brand-logo" aria-label="Ir al inicio de Piojitos Kids">
+        <div class="brand-glyph">PK</div>
+        <div class="brand-text-wrap">
+          <span class="brand-name">PIOJITOS <span>KIDS</span></span>
+          <span class="brand-tagline">Huancayo // Digital Fashion</span>
+        </div>
+      </a>
+
+      <!-- Navegación de Escritorio -->
+      <nav aria-label="Menú principal">
+        <ul class="nav-links">
+          <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+          <li><a href="#colecciones" class="nav-link">Colecciones</a></li>
+          <li><a href="#catalogo" class="nav-link">Catálogo</a></li>
+          <li><a href="#tiktok-live" class="nav-link">TikTok en Vivo</a></li>
+          <li><a href="#como-comprar" class="nav-link">Cómo Comprar</a></li>
+          <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botones de Acción -->
+      <div class="nav-actions">
+        <!-- Acceso directo a Transmisión TikTok -->
+        <a href="#tiktok-live" class="btn-live-pill" title="Ver transmisiones en vivo">
+          <span class="live-pulse-dot"></span>
+          <span>TIKTOK LIVE</span>
+        </a>
+
+        <!-- Botón de Métricas Demostrativas (HUD) -->
+        <button class="btn-metrics-hud" id="btnOpenMetrics" title="Indicadores Demostrativos" aria-label="Ver indicadores del sistema">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 20V10M12 20V4M6 20v-6"/>
+          </svg>
+        </button>
+
+        <!-- Botón de Carrito -->
+        <button class="btn-cart-nav" id="btnOpenCart" aria-label="Abrir carrito de compras">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+          </svg>
+          <span>Pedido</span>
+          <span class="cart-badge" id="cartBadgeCount">0</span>
+        </button>
+
+        <!-- Botón Móvil -->
+        <button class="btn-mobile-toggle" id="btnMobileToggle" aria-label="Abrir menú de navegación">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menú Móvil Desplegable -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-nav-links">
+      <li><a href="#inicio" class="mobile-nav-item">Inicio</a></li>
+      <li><a href="#colecciones" class="mobile-nav-item">Colecciones</a></li>
+      <li><a href="#catalogo" class="mobile-nav-item">Catálogo Digital</a></li>
+      <li><a href="#tiktok-live" class="mobile-nav-item">TikTok en Vivo</a></li>
+      <li><a href="#como-comprar" class="mobile-nav-item">Cómo Comprar</a></li>
+      <li><a href="#nosotros" class="mobile-nav-item">Nosotros</a></li>
+      <li><a href="#contacto" class="mobile-nav-item">Contacto</a></li>
+    </ul>
+    <div style="margin-top: auto; display: flex; flex-direction: column; gap: 1rem;">
+      <button class="btn-cyber-primary" id="btnMobileOpenMetrics" style="width: 100%;">
+        📊 Indicadores Demostrativos
+      </button>
+      <div style="font-size: 0.78rem; color: var(--color-text-dim); text-align: center;">
+        Piojitos Kids • Huancayo, Junín, Perú
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION (EXPERIENCIA DIGITAL FUTURISTA)
+         ========================================================================== -->
+    <section class="hero-cyber" id="inicio">
+      <div class="hero-glow-orb-1"></div>
+      <div class="hero-glow-orb-2"></div>
+
+      <div class="container hero-grid-layout">
+        <!-- Columna de Narrativa y Telemetría -->
+        <div class="hero-content-col">
+          <div class="hero-telemetry-bar">
+            <span class="hud-badge"><span class="hud-dot"></span> CATÁLOGO DIGITAL V2.6</span>
+            <span class="telemetry-node">HUANCAYO NODE // EN LÍNEA</span>
+            <span class="telemetry-node">TIKTOK SYNC READY</span>
+          </div>
+
+          <h1 class="hero-title">
+            MODA INFANTIL <br>
+            <span class="text-gradient">ALMA ANDINA</span> &amp; <br>
+            <span class="text-gradient-cyan">VISIÓN FUTURISTA</span>
+          </h1>
+
+          <p class="hero-desc">
+            Fabricamos y comercializamos chompas y prendas infantiles en Huancayo, Junín. 
+            Fusionamos el abrigo térmico tradicional con una experiencia digital interactiva: 
+            explora el catálogo, prepárate para los en vivos de TikTok y coordina tu pedido directo a WhatsApp.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#catalogo" class="btn-cyber-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
+              </svg>
+              <span>EXPLORAR CATÁLOGO TECH</span>
+            </a>
+            <a href="#tiktok-live" class="btn-cyber-outline">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.29 0 .58.04.86.11V9.4a6.33 6.33 0 0 0-.86-.06 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V9a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.43z"/>
+              </svg>
+              <span>VER EN VIVO EN TIKTOK</span>
+            </a>
+          </div>
+
+          <div class="hero-stats-row">
+            <div class="hero-stat-item">
+              <span class="hero-stat-value">100<span>%</span></span>
+              <span class="hero-stat-label">Hilado Antialérgico</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="hero-stat-value">PERÚ<span>✦</span></span>
+              <span class="hero-stat-label">Envíos a Nivel Nacional</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="hero-stat-value">PROPIA<span>⚡</span></span>
+              <span class="hero-stat-label">Fabricación en Huancayo</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna 3D Holo-Card Showcase Interactivo -->
+        <div class="hero-3d-scene">
+          <div class="holo-card-container" id="heroCardContainer">
+            <div class="holo-card" id="heroCard">
+              <div class="holo-card-inner">
+                <div class="holo-card-header">
+                  <span class="holo-chip">PK-CHOMPA-NEO</span>
+                  <span class="holo-badge-live">
+                    <span class="live-pulse-dot" style="background: var(--color-neon-mint); box-shadow: 0 0 8px var(--color-neon-mint);"></span>
+                    EDICIÓN 2026
+                  </span>
+                </div>
+
+                <div class="holo-visual-center">
+                  <div class="holo-rings"></div>
+                  <!-- Imagen Destacada del Hero con Fallback SVG Automático -->
+                  <img src="https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?auto=format&fit=crop&w=600&q=80" 
+                       alt="Chompa Cyber-Knit Andino Neo de Piojitos Kids" 
+                       class="holo-product-img"
+                       id="heroHoloImg"
+                       onerror="this.onerror=null; this.src=getSvgFallback('Chompa Cyber-Knit');">
+                </div>
+
+                <div class="holo-card-footer">
+                  <div class="holo-model-info">
+                    <h4>Chompa Cyber-Knit</h4>
+                    <span>Punto Huancaíno Acanalado</span>
+                  </div>
+                  <div class="holo-price">
+                    <div class="holo-price-val">S/. 45.00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         COLECCIONES (MUNDOS & LÍNEAS DE MODA)
+         ========================================================================== -->
+    <section class="section-collections" id="colecciones">
+      <div class="container">
+        <div class="section-header">
+          <span class="hud-badge">LÍNEAS DE DISEÑO</span>
+          <h2>COLECCIONES <span class="text-gradient">PIOJITOS NEO</span></h2>
+          <p>Prendas diseñadas para resistir las temperaturas andinas y ofrecer comodidad total con cortes futuristas.</p>
+        </div>
+
+        <div class="collections-grid">
+          <!-- Colección 1 -->
+          <div class="collection-card" onclick="filterByCategory('chompas')">
+            <div>
+              <div class="col-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/>
+                </svg>
+              </div>
+              <h3>Chompas Tejidas</h3>
+              <p>El corazón de Piojitos Kids: tejidos de punto acanalado, jacquard geométrico y cuello alto para máximo abrigo.</p>
+            </div>
+            <span class="col-link-pill">Ver colección ▹</span>
+          </div>
+
+          <!-- Colección 2 -->
+          <div class="collection-card" onclick="filterByCategory('polerones')">
+            <div>
+              <div class="col-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2a4 4 0 0 0-4 4v2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2h-4V6a4 4 0 0 0-4-4z"/>
+                </svg>
+              </div>
+              <h3>Polerones &amp; Hoodies</h3>
+              <p>Algodón perchado pesado con interior afelpado, capuchas ergonómicas y bolsillos funcionales estilo cyber-streetwear.</p>
+            </div>
+            <span class="col-link-pill">Ver colección ▹</span>
+          </div>
+
+          <!-- Colección 3 -->
+          <div class="collection-card" onclick="filterByCategory('casacas')">
+            <div>
+              <div class="col-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <h3>Casacas Térmicas</h3>
+              <p>Prendas acolchadas ultraligeras, repelentes al agua y forradas con micropolar térmico para heladas andinas.</p>
+            </div>
+            <span class="col-link-pill">Ver colección ▹</span>
+          </div>
+
+          <!-- Colección 4 -->
+          <div class="collection-card" onclick="filterByCategory('conjuntos')">
+            <div>
+              <div class="col-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                </svg>
+              </div>
+              <h3>Conjuntos Neo</h3>
+              <p>Sets coordinados de dos piezas (chompa o polerón + jogger térmico) con calce flexible para infantes y niños.</p>
+            </div>
+            <span class="col-link-pill">Ver colección ▹</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       CATÁLOGO DIGITAL INTERACTIVO (12+ PRODUCTOS, BUSCADOR & FILTROS)
+       ========================================================================== -->
+    <section class="section-catalog" id="catalogo">
+      <div class="container">
+        <div class="section-header">
+          <span class="hud-badge">INVENTARIO DISPONIBLE</span>
+          <h2>CATÁLOGO <span class="text-gradient">DIGITAL</span></h2>
+          <p>Explora nuestras prendas de fabricación peruana. Filtra por categoría, talla, color o precio para armar tu pedido.</p>
+        </div>
+
+        <!-- Panel de Control de Búsqueda y Filtros -->
+        <div class="catalog-control-panel">
+          <div class="search-filter-row">
+            <!-- Barra de Búsqueda -->
+            <div class="search-box-wrapper">
+              <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
+              </svg>
+              <input type="text" 
+                     id="searchInput" 
+                     class="search-input" 
+                     placeholder="Buscar por modelo, chompa, polerón, material o código..." 
+                     aria-label="Buscar productos">
+              <button class="btn-clear-search" id="btnClearSearch" title="Limpiar búsqueda" aria-label="Limpiar búsqueda">&times;</button>
+            </div>
+
+            <!-- Selector de Ordenamiento -->
+            <div class="sort-control-wrapper">
+              <label for="sortSelect" class="sort-label">Ordenar por:</label>
+              <select id="sortSelect" class="sort-select">
+                <option value="featured">Destacados Neo</option>
+                <option value="price-asc">Precio: Menor a Mayor</option>
+                <option value="price-desc">Precio: Mayor a Menor</option>
+                <option value="name-asc">Nombre A-Z</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Pestañas de Categoría -->
+          <div class="category-pills-row" id="categoryPillsContainer">
+            <button class="category-pill active" data-category="all">Todas las Prendas</button>
+            <button class="category-pill" data-category="chompas">Chompas Tejidas</button>
+            <button class="category-pill" data-category="polerones">Polerones &amp; Hoodies</button>
+            <button class="category-pill" data-category="casacas">Casacas Térmicas</button>
+            <button class="category-pill" data-category="conjuntos">Conjuntos Neo</button>
+          </div>
+
+          <!-- Filtros de Talla y Color -->
+          <div class="advanced-filters-row">
+            <!-- Filtro de Talla -->
+            <div class="filter-group">
+              <span class="filter-group-label">Tallas:</span>
+              <div class="size-chips-wrap" id="sizeFiltersWrap">
+                <button class="size-chip-filter active" data-size="all">Todas</button>
+                <button class="size-chip-filter" data-size="Talla 2">2</button>
+                <button class="size-chip-filter" data-size="Talla 4">4</button>
+                <button class="size-chip-filter" data-size="Talla 6">6</button>
+                <button class="size-chip-filter" data-size="Talla 8">8</button>
+                <button class="size-chip-filter" data-size="Talla 10">10</button>
+                <button class="size-chip-filter" data-size="Talla 12">12</button>
+                <button class="size-chip-filter" data-size="Talla 14">14</button>
+                <button class="size-chip-filter" data-size="Talla 16">16</button>
+              </div>
+            </div>
+
+            <!-- Filtro de Color -->
+            <div class="filter-group">
+              <span class="filter-group-label">Colores:</span>
+              <div class="color-swatches-wrap" id="colorFiltersWrap">
+                <button class="color-swatch-filter active" data-color="all" style="background: conic-gradient(red, yellow, lime, aqua, blue, magenta, red);" title="Todos los colores"></button>
+                <button class="color-swatch-filter" data-color="Azul" style="background: #0066FF;" title="Azules"></button>
+                <button class="color-swatch-filter" data-color="Violeta" style="background: #8B5CF6;" title="Violetas"></button>
+                <button class="color-swatch-filter" data-color="Celeste" style="background: #00F0FF;" title="Celestes"></button>
+                <button class="color-swatch-filter" data-color="Negro" style="background: #111827;" title="Negros"></button>
+                <button class="color-swatch-filter" data-color="Blanco" style="background: #FFFFFF;" title="Blancos"></button>
+              </div>
+            </div>
+
+            <!-- Botón Reset -->
+            <button class="btn-reset-filters" id="btnResetFilters">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
+                <path d="M3 3v5h5"/>
+              </svg>
+              <span>Restablecer Filtros</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Estado de Resultados -->
+        <div class="catalog-status-bar">
+          <div class="catalog-count-info">
+            Mostrando <span id="productsCountDisplay">12</span> prendas tecnológicas
+          </div>
+        </div>
+
+        <!-- Grilla de Productos Renderizada por JS -->
+        <div class="products-grid" id="productsGrid" role="region" aria-live="polite">
+          <!-- Inyectado dinámicamente -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         TIKTOK EN VIVO (CONEXIÓN DIGITAL & TRANSMISIÓN)
+         ========================================================================== -->
+    <section class="section-tiktok-live" id="tiktok-live">
+      <div class="container">
+        <div class="live-broadcast-box">
+          <div class="live-box-layout">
+            <div class="live-content-col">
+              <div class="live-status-header">
+                <span class="live-badge-glow">
+                  <span class="live-pulse-dot"></span>
+                  TRANSMISIÓN PERIÓDICA EN VIVO
+                </span>
+                <span class="telemetry-node">HUANCAYO STUDIO</span>
+              </div>
+
+              <h3>CONÉCTATE A NUESTROS <span class="text-gradient">TIKTOK LIVES</span></h3>
+
+              <p>
+                En Piojitos Kids llevamos nuestra fábrica de Huancayo directamente a tu pantalla. 
+                Durante las transmisiones en vivo mostramos la textura real, elasticidad, combinación de colores 
+                y acabados térmicos de cada chompa.
+              </p>
+
+              <!-- Enlaces Oficiales de TikTok -->
+              <div class="tiktok-channels-grid">
+                <div class="tiktok-channel-card">
+                  <div>
+                    <span class="channel-role">Canal Oficial de la Marca</span>
+                    <div class="channel-handle">@piojitos.kids4</div>
+                  </div>
+                  <a href="https://www.tiktok.com/@piojitos.kids4" target="_blank" rel="noopener noreferrer" class="btn-cyber-tiktok" style="width: 100%;">
+                    <span>Seguir en TikTok</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+                    </svg>
+                  </a>
+                </div>
+
+                <div class="tiktok-channel-card">
+                  <div>
+                    <span class="channel-role">TikTok de Mario Sanchez</span>
+                    <div class="channel-handle">@mariosanchezhuanc</div>
+                  </div>
+                  <a href="https://www.tiktok.com/@mariosanchezhuanc" target="_blank" rel="noopener noreferrer" class="btn-cyber-tiktok" style="width: 100%;">
+                    <span>Seguir a Mario</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="live-broadcast-tips">
+                💡 <strong>Consejo de Compra:</strong> ¿Viste un modelo que te gustó en la transmisión en vivo? 
+                Búscalo en este catálogo digital para consultar su código y agrégalo a tu pedido para coordinar de inmediato.
+              </div>
+            </div>
+
+            <!-- Monitor de Señal Simulado -->
+            <div class="live-signal-monitor">
+              <div class="monitor-telemetry">
+                <span>ESTADO: <strong>ACTIVO / EMISIÓN</strong></span>
+                <span>ORIGEN: <strong>HUANCAYO, PERÚ</strong></span>
+              </div>
+
+              <div style="text-align: center; padding: 1rem 0;">
+                <div style="font-family: var(--font-display); font-size: 0.85rem; color: var(--color-neon-cyan); margin-bottom: 0.75rem;">
+                  MODULACIÓN DE TRANSMISIÓN DE AUDIO &amp; COLOR
+                </div>
+                <!-- Visualizador de Onda de Audio Pure CSS -->
+                <div class="audio-wave-visualizer">
+                  <div class="wave-bar"></div>
+                  <div class="wave-bar"></div>
+                  <div class="wave-bar"></div>
+                  <div class="wave-bar"></div>
+                  <div class="wave-bar"></div>
+                  <div class="wave-bar"></div>
+                  <div class="wave-bar"></div>
+                </div>
+              </div>
+
+              <div style="font-size: 0.82rem; color: var(--color-text-dim); text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 1rem;">
+                Canales de interacción simultánea: TikTok Live Broadcast &amp; WhatsApp Direct Dispatch.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CÓMO COMPRAR (PROTOCOLO DIGITAL EN 4 PASOS)
+         ========================================================================== -->
+    <section class="section-how-to-buy" id="como-comprar">
+      <div class="container">
+        <div class="section-header">
+          <span class="hud-badge">FLUJO DE COMPRA</span>
+          <h2>¿CÓMO <span class="text-gradient">COMPRAR?</span></h2>
+          <p>Sigue los 4 pasos sencillos para armar tu lista de prendas y coordinar tu envío directo a tu ciudad.</p>
+        </div>
+
+        <div class="protocol-steps-grid">
+          <!-- Paso 1 -->
+          <div class="protocol-step-card">
+            <div class="step-number-chip">01</div>
+            <h3>Explora el catálogo</h3>
+            <p>Revisa nuestra variedad de chompas, polerones y conjuntos térmicos. Utiliza los filtros de talla, color y categoría.</p>
+          </div>
+
+          <!-- Paso 2 -->
+          <div class="protocol-step-card">
+            <div class="step-number-chip">02</div>
+            <h3>Selecciona tus prendas</h3>
+            <p>Elige tu talla ideal, tu color favorito y la cantidad deseada. Agrégalas al carrito con un solo clic.</p>
+          </div>
+
+          <!-- Paso 3 -->
+          <div class="protocol-step-card">
+            <div class="step-number-chip">03</div>
+            <h3>Prepara tu pedido</h3>
+            <p>Ingresa tu nombre y tu ciudad o agencia de destino en el formulario de despacho para generar el resumen formal.</p>
+          </div>
+
+          <!-- Paso 4 -->
+          <div class="protocol-step-card">
+            <div class="step-number-chip">04</div>
+            <h3>Consulta disponibilidad</h3>
+            <p>Envía tu pedido generado directamente a nuestro WhatsApp oficial para validar stock inmediato y coordinar el despacho.</p>
+          </div>
+        </div>
+
+        <!-- Aclaración Obligatoria -->
+        <div class="clarification-alert-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+          </svg>
+          <p>
+            <strong>Aviso Importante:</strong> La disponibilidad real de stock, los medios de pago aceptados 
+            (transferencias bancarias, Yape, Plin) y las opciones y costos de envío (reparto local en Huancayo y envíos 
+            por agencia a nivel nacional) <strong>deben confirmarse directamente con la empresa</strong> al momento del contacto por WhatsApp.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         NOSOTROS (INFORMACIÓN INSTITUCIONAL VERIFICADA)
+         ========================================================================== -->
+    <section class="section-about" id="nosotros">
+      <div class="container">
+        <div class="about-cyber-card">
+          <div class="about-layout">
+            <div class="about-info-col">
+              <span class="hud-badge" style="margin-bottom: 1.25rem;">IDENTIDAD INSTITUCIONAL</span>
+              
+              <!-- Texto Institucional Exacto Requerido -->
+              <blockquote class="official-quote-box">
+                "Piojitos Kids es una empresa ubicada en Huancayo, dedicada principalmente a la fabricación y comercialización de prendas de vestir para niños y niñas, especialmente chompas. A través de TikTok y WhatsApp, acerca sus productos a clientes de Huancayo y otras regiones del Perú."
+              </blockquote>
+
+              <p class="about-desc-extra">
+                Nuestra fábrica trabaja con telares de tejido fino e hilados seleccionados para que cada prenda brinde 
+                la máxima suavidad en la piel de los más pequeños, soportando tanto el frío de la sierra como las temporadas 
+                húmedas de la costa peruana.
+              </p>
+
+              <!-- Dossier Corporativo -->
+              <div class="company-dossier-grid">
+                <div class="dossier-item">
+                  <div class="dossier-label">Representante Oficial</div>
+                  <div class="dossier-val">Mario Sanchez</div>
+                </div>
+                <div class="dossier-item">
+                  <div class="dossier-label">RUC Corporativo</div>
+                  <div class="dossier-val">10201008811</div>
+                </div>
+                <div class="dossier-item">
+                  <div class="dossier-label">Dirección Fiscal / Sede</div>
+                  <div class="dossier-val">Jr. Cajamarca 291, Huancayo</div>
+                </div>
+                <div class="dossier-item">
+                  <div class="dossier-label">Cobertura de Mercado</div>
+                  <div class="dossier-val">Huancayo y todo el Perú</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta Visual de Sede -->
+            <div class="about-location-display">
+              <div class="location-node-badge">
+                <span class="hud-dot" style="background: var(--color-neon-mint); box-shadow: 0 0 8px var(--color-neon-mint);"></span>
+                NODO CENTRAL // HUANCAYO, JUNÍN
+              </div>
+
+              <div class="location-details">
+                <h4>Sede de Confección &amp; Envíos</h4>
+                <p>
+                  <strong>Dirección:</strong> Jr. Cajamarca 291, Huancayo, Perú.<br>
+                  Punto de despacho central para envíos locales y traslados por agencias hacia todas las regiones del país.
+                </p>
+                <div style="font-family: var(--font-display); font-size: 0.82rem; color: var(--color-neon-cyan);">
+                  Canales Oficiales: TikTok (@piojitos.kids4 / @mariosanchezhuanc) &amp; WhatsApp
+                </div>
+              </div>
+
+              <div style="border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 1.25rem;">
+                <a href="#contacto" class="btn-cyber-outline" style="width: 100%; text-align: center;">
+                  Ver datos de contacto ▹
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACTO (SEDE HUANCAYO & CONSTRUCTOR DE CONSULTA)
+         ========================================================================== -->
+    <section class="section-contact" id="contacto">
+      <div class="container">
+        <div class="section-header">
+          <span class="hud-badge">CANAL DIRECTO</span>
+          <h2>CONTACTO &amp; <span class="text-gradient">ATENCIÓN</span></h2>
+          <p>Comunícate con Mario Sanchez y el equipo de Piojitos Kids para coordinar tus prendas favoritas.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Columna 1: Información Oficial -->
+          <div class="contact-info-panel">
+            <div>
+              <h3 style="font-size: 1.6rem; color: var(--color-white); margin-bottom: 1.5rem;">Información del Negocio</h3>
+
+              <div class="contact-item-row">
+                <div class="contact-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <div class="contact-item-text">
+                  <h4>Dirección en Huancayo</h4>
+                  <p>Jr. Cajamarca 291, Huancayo, Junín, Perú</p>
+                </div>
+              </div>
+
+              <div class="contact-item-row">
+                <div class="contact-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                  </svg>
+                </div>
+                <div class="contact-item-text">
+                  <h4>Transmisiones en TikTok</h4>
+                  <p>
+                    Oficial: <a href="https://www.tiktok.com/@piojitos.kids4" target="_blank" rel="noopener noreferrer">@piojitos.kids4</a><br>
+                    Representante: <a href="https://www.tiktok.com/@mariosanchezhuanc" target="_blank" rel="noopener noreferrer">@mariosanchezhuanc</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-item-row">
+                <div class="contact-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                </div>
+                <div class="contact-item-text">
+                  <h4>Atención por WhatsApp</h4>
+                  <p>Canal de confirmación de stock, medios de pago y despacho nacional.</p>
+                </div>
+              </div>
+            </div>
+
+            <div style="background: rgba(255, 255, 255, 0.03); padding: 1.25rem; border-radius: var(--radius-sm); border: 1px solid rgba(255, 255, 255, 0.08);">
+              <div style="font-size: 0.75rem; color: var(--color-neon-cyan); font-family: var(--font-display); text-transform: uppercase;">
+                Representación Legal
+              </div>
+              <div style="font-size: 0.95rem; font-weight: 700; color: var(--color-white);">
+                Mario Sanchez • RUC: 10201008811
+              </div>
+            </div>
+          </div>
+
+          <!-- Columna 2: Generador de Consulta Rápida -->
+          <div class="contact-form-panel">
+            <h3>Envía una Consulta Directa</h3>
+            <p>Completa tus datos para formular una consulta y prepararla para WhatsApp o copiarla.</p>
+
+            <form id="directInquiryForm" onsubmit="handleDirectInquiry(event)">
+              <div class="form-group">
+                <label for="inquiryName" class="form-label">Tu Nombre Completo</label>
+                <input type="text" id="inquiryName" class="form-input" placeholder="Ej. Rosa Gómez" required>
+              </div>
+
+              <div class="form-group">
+                <label for="inquiryCity" class="form-label">Ciudad o Región</label>
+                <input type="text" id="inquiryCity" class="form-input" placeholder="Ej. Huancayo, Lima, Trujillo, Arequipa..." required>
+              </div>
+
+              <div class="form-group">
+                <label for="inquiryTopic" class="form-label">Motivo de Consulta</label>
+                <select id="inquiryTopic" class="form-select">
+                  <option value="Consulta sobre Chompas y Ropa Infantil">Consulta sobre Chompas y Ropa Infantil</option>
+                  <option value="Consulta de Ventas por Mayor">Consulta de Ventas por Mayor / Docenas</option>
+                  <option value="Envíos a Provincias y Agencias">Envíos a Provincias y Agencias</option>
+                  <option value="Prenda vista en Transmisión de TikTok">Prenda vista en Transmisión de TikTok</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="inquiryMessage" class="form-label">Mensaje o Detalle</label>
+                <textarea id="inquiryMessage" class="form-textarea" placeholder="Escribe tu consulta sobre tallas, modelos o disponibilidad..."></textarea>
+              </div>
+
+              <button type="submit" class="btn-cyber-primary" style="width: 100%;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                </svg>
+                <span>Generar Consulta para WhatsApp</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       MODAL 1: DETALLE DE PRODUCTO INTERACTIVO
+       ========================================================================== -->
+  <div class="modal-backdrop" id="productModalBackdrop" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-cyber-window">
+      <button class="btn-modal-close" id="btnCloseProductModal" aria-label="Cerrar detalle">&times;</button>
+
+      <div class="modal-detail-layout">
+        <!-- Visualizador Izquierdo -->
+        <div class="modal-visual-col">
+          <div class="modal-image-display">
+            <img src="" alt="" id="modalProductImg">
+          </div>
+
+          <div class="modal-tech-features">
+            <h5>Ficha Técnica &amp; Confección</h5>
+            <ul class="tech-specs-list" id="modalSpecsList">
+              <!-- Inyectado dinámicamente -->
+            </ul>
+          </div>
+        </div>
+
+        <!-- Información y Selectores Derechos -->
+        <div class="modal-info-col">
+          <div class="modal-product-header">
+            <div class="modal-sku-bar">
+              <span class="modal-sku" id="modalProductSku">SKU: PK-00</span>
+              <span class="hud-badge" id="modalCategoryBadge">CHOMPAS</span>
+            </div>
+            <h2 class="modal-title" id="modalProductTitle">Nombre del Producto</h2>
+
+            <div class="modal-price-wrap">
+              <div class="modal-price-val"><span>S/.</span> <span id="modalProductPrice">0.00</span></div>
+              <span class="modal-tax-note">Soles peruanos</span>
+            </div>
+
+            <p class="modal-desc" id="modalProductDesc">
+              Descripción detallada de la prenda.
+            </p>
+          </div>
+
+          <!-- Selector de Tallas -->
+          <div class="selector-section">
+            <div class="selector-header">
+              <span class="selector-label">Seleccionar Talla</span>
+              <span class="selector-selected-val" id="modalSelectedSizeText">Talla seleccionada</span>
+            </div>
+            <div class="modal-size-grid" id="modalSizeGrid">
+              <!-- Inyectado dinámicamente -->
+            </div>
+          </div>
+
+          <!-- Selector de Colores -->
+          <div class="selector-section">
+            <div class="selector-header">
+              <span class="selector-label">Seleccionar Color</span>
+              <span class="selector-selected-val" id="modalSelectedColorText">Color seleccionado</span>
+            </div>
+            <div class="modal-color-grid" id="modalColorGrid">
+              <!-- Inyectado dinámicamente -->
+            </div>
+          </div>
+
+          <!-- Selector de Cantidad y Subtotal -->
+          <div class="quantity-control-row">
+            <div>
+              <span class="selector-label" style="display: block; margin-bottom: 0.4rem;">Cantidad</span>
+              <div class="qty-stepper">
+                <button class="btn-qty" onclick="changeModalQty(-1)" aria-label="Disminuir cantidad">-</button>
+                <input type="text" id="modalQtyInput" class="qty-input" value="1" readonly>
+                <button class="btn-qty" onclick="changeModalQty(1)" aria-label="Aumentar cantidad">+</button>
+              </div>
+            </div>
+
+            <div class="modal-subtotal-info">
+              Subtotal estimado: <br>
+              <strong id="modalSubtotalDisplay">S/. 0.00</strong>
+            </div>
+          </div>
+
+          <!-- Botones de Acción en Modal -->
+          <div class="modal-actions-cluster">
+            <button class="btn-cyber-primary" id="btnModalAddToCart">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M5 12h14"/>
+              </svg>
+              <span>AGREGAR AL PEDIDO</span>
+            </button>
+
+            <button class="btn-cyber-wa" id="btnModalWaInquiry">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.301-.15-1.78-.878-2.056-.978-.276-.1-.476-.15-.676.15-.2.301-.776.978-.952 1.179-.176.2-.351.226-.652.075-.301-.15-1.272-.469-2.423-1.496-.897-.799-1.502-1.787-1.678-2.088-.176-.301-.019-.464.132-.614.135-.135.301-.351.451-.527.151-.176.201-.301.301-.502.101-.2.05-.376-.025-.526-.075-.15-.676-1.63-.927-2.232-.244-.587-.492-.507-.676-.516l-.577-.01c-.2 0-.527.075-.802.376-.276.301-1.053 1.029-1.053 2.509 0 1.48 1.079 2.909 1.229 3.11.15.2 2.122 3.24 5.141 4.544.718.31 1.279.495 1.716.634.721.23 1.378.197 1.9.12.581-.088 1.78-.727 2.031-1.43.251-.703.251-1.305.176-1.43-.075-.125-.276-.2-.577-.351z"/>
+              </svg>
+              <span>Consultar Prenda</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL 2: CARRITO DE COMPRAS Y FORMULARIO DE PEDIDO (SLIDE-OVER)
+       ========================================================================== -->
+  <div class="cart-drawer-backdrop" id="cartDrawerBackdrop" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="cart-drawer-panel">
+      <!-- Encabezado del Carrito -->
+      <div class="cart-header">
+        <div class="cart-header-title">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+          </svg>
+          <h3>Tu Lista de Pedido</h3>
+          <span class="hud-badge" id="cartHeaderCountBadge">0 prendas</span>
+        </div>
+        <button class="btn-modal-close" style="position: static;" id="btnCloseCartDrawer" aria-label="Cerrar pedido">&times;</button>
+      </div>
+
+      <!-- Lista de Items del Carrito -->
+      <div class="cart-items-body" id="cartItemsList">
+        <!-- Renderizado dinámicamente -->
+      </div>
+
+      <!-- Formulario de Checkout & Acciones -->
+      <div class="cart-checkout-section" id="cartCheckoutSection">
+        <div class="cart-totals-box">
+          <div class="totals-row">
+            <span>Subtotal de Prendas:</span>
+            <span id="cartSubtotalText">S/. 0.00</span>
+          </div>
+          <div class="totals-row">
+            <span>Envío a Destino:</span>
+            <span style="color: var(--color-neon-mint);">A coordinar</span>
+          </div>
+          <div class="totals-row grand-total">
+            <span>Total Estimado:</span>
+            <span id="cartGrandTotalText">S/. 0.00</span>
+          </div>
+        </div>
+
+        <!-- Formulario Compacto del Cliente -->
+        <form class="order-form-compact" id="orderForm" onsubmit="event.preventDefault();">
+          <div>
+            <label for="orderCustomerName" class="form-label" style="font-size: 0.75rem;">Nombre Completo (*)</label>
+            <input type="text" id="orderCustomerName" class="form-input" placeholder="Nombre de quien recibe" required>
+          </div>
+          <div>
+            <label for="orderCustomerCity" class="form-label" style="font-size: 0.75rem;">Ciudad / Región de Entrega (*)</label>
+            <input type="text" id="orderCustomerCity" class="form-input" placeholder="Ej. Huancayo, Lima, etc." required>
+          </div>
+          <div>
+            <label for="orderCustomerAddress" class="form-label" style="font-size: 0.75rem;">Dirección o Agencia Preferida</label>
+            <input type="text" id="orderCustomerAddress" class="form-input" placeholder="Ej. Shalom, Olva Courier o Domicilio">
+          </div>
+          <div>
+            <label for="orderCustomerNotes" class="form-label" style="font-size: 0.75rem;">Notas Adicionales</label>
+            <input type="text" id="orderCustomerNotes" class="form-input" placeholder="Ej. Colores alternativos, horario, etc.">
+          </div>
+        </form>
+
+        <!-- Aviso si la constante WHATSAPP_NUMBER está vacía -->
+        <div class="wa-empty-notice" id="waEmptyNotice">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+          </svg>
+          <div>
+            <strong>Aviso de Configuración:</strong> El enlace directo a WhatsApp se activará al configurar el número oficial. 
+            Puedes <strong>copiar el pedido</strong> con un solo clic para pegarlo en tu chat habitual con Mario Sanchez.
+          </div>
+        </div>
+
+        <!-- Botones de Despacho -->
+        <div class="cart-actions-cluster">
+          <button class="btn-cyber-wa" id="btnDispatchWhatsApp" onclick="processOrderToWhatsApp()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.301-.15-1.78-.878-2.056-.978-.276-.1-.476-.15-.676.15-.2.301-.776.978-.952 1.179-.176.2-.351.226-.652.075-.301-.15-1.272-.469-2.423-1.496-.897-.799-1.502-1.787-1.678-2.088-.176-.301-.019-.464.132-.614.135-.135.301-.351.451-.527.151-.176.201-.301.301-.502.101-.2.05-.376-.025-.526-.075-.15-.676-1.63-.927-2.232-.244-.587-.492-.507-.676-.516l-.577-.01c-.2 0-.527.075-.802.376-.276.301-1.053 1.029-1.053 2.509 0 1.48 1.079 2.909 1.229 3.11.15.2 2.122 3.24 5.141 4.544.718.31 1.279.495 1.716.634.721.23 1.378.197 1.9.12.581-.088 1.78-.727 2.031-1.43.251-.703.251-1.305.176-1.43-.075-.125-.276-.2-.577-.351z"/>
+            </svg>
+            <span id="btnDispatchText">Enviar Pedido a WhatsApp</span>
+          </button>
+
+          <button class="btn-cyber-outline" onclick="copyOrderSummaryToClipboard()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+            </svg>
+            <span>Copiar Pedido al Portapapeles</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL 3: INDICADORES DEMOSTRATIVOS (MÉTRICAS & TELEMETRÍA UX)
+       ========================================================================== -->
+  <div class="modal-backdrop" id="metricsModalBackdrop" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-cyber-window metrics-window">
+      <button class="btn-modal-close" id="btnCloseMetricsModal" aria-label="Cerrar indicadores">&times;</button>
+
+      <div style="padding: 2.25rem;">
+        <div class="metrics-header">
+          <span class="metrics-demo-badge">📊 MÉTRICAS DEMOSTRATIVAS DE SESIÓN</span>
+          <h3 style="font-size: 1.8rem; color: var(--color-white); margin-bottom: 0.5rem;">Indicadores del Sistema</h3>
+          <p style="font-size: 0.92rem; color: var(--color-text-muted);">
+            Registra en tiempo real cómo interactúa el usuario con el catálogo digital antes de derivar su pedido a WhatsApp y TikTok.
+          </p>
+        </div>
+
+        <!-- Grilla de KPIs -->
+        <div class="metrics-kpi-grid">
+          <div class="metric-kpi-card">
+            <span class="metric-kpi-val" id="metricDetailClicks">0</span>
+            <span class="metric-kpi-title">Clics en Detalles de Producto</span>
+          </div>
+
+          <div class="metric-kpi-card">
+            <span class="metric-kpi-val" id="metricCartAdds">0</span>
+            <span class="metric-kpi-title">Prendas Agregadas al Carrito</span>
+          </div>
+
+          <div class="metric-kpi-card">
+            <span class="metric-kpi-val" id="metricWaQueries">0</span>
+            <span class="metric-kpi-title">Consultas de WhatsApp Registradas</span>
+          </div>
+
+          <div class="metric-kpi-card">
+            <span class="metric-kpi-val" id="metricOrdersPrepared">0</span>
+            <span class="metric-kpi-title">Pedidos Preparados en el Formulario</span>
+          </div>
+        </div>
+
+        <!-- Ranking de Prendas con Mayor Interacción -->
+        <div class="metrics-top-products">
+          <h4>Prendas con Mayor Interacción</h4>
+          <ul class="top-products-list" id="metricsTopList">
+            <!-- Inyectado dinámicamente -->
+          </ul>
+        </div>
+
+        <div class="metrics-actions-row">
+          <span style="font-size: 0.78rem; color: var(--color-text-dim);">
+            Datos demostrativos persistentes en <code>localStorage</code>
+          </span>
+          <button class="btn-cyber-outline" style="padding: 0.5rem 1rem; font-size: 0.8rem;" onclick="resetMetrics()">
+            Reiniciar Métricas
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contenedor de Notificaciones Toast -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- ==========================================================================
+       PIE DE PÁGINA (LEGAL, HUANCAYO & ENLACES OFICIALES)
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Columna de Marca -->
+        <div class="footer-brand">
+          <a href="#inicio" class="brand-logo">
+            <div class="brand-glyph">PK</div>
+            <div class="brand-text-wrap">
+              <span class="brand-name">PIOJITOS <span>KIDS</span></span>
+              <span class="brand-tagline">Huancayo // Perú</span>
+            </div>
+          </a>
+          <p>
+            Fabricación y comercialización de chompas y ropa infantil en Huancayo, Junín. 
+            Moda andina tecnológica para todo el Perú.
+          </p>
+          <div style="font-size: 0.8rem; color: var(--color-text-dim);">
+            RUC: 10201008811 • Mario Sanchez
+          </div>
+        </div>
+
+        <!-- Enlaces Rápidos -->
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul class="footer-links-list">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#colecciones">Colecciones Neo</a></li>
+            <li><a href="#catalogo">Catálogo Digital</a></li>
+            <li><a href="#como-comprar">Cómo Comprar</a></li>
+          </ul>
+        </div>
+
+        <!-- Canales Oficiales -->
+        <div class="footer-col">
+          <h4>Canales Oficiales</h4>
+          <ul class="footer-links-list">
+            <li><a href="https://www.tiktok.com/@piojitos.kids4" target="_blank" rel="noopener noreferrer">TikTok @piojitos.kids4</a></li>
+            <li><a href="https://www.tiktok.com/@mariosanchezhuanc" target="_blank" rel="noopener noreferrer">TikTok @mariosanchezhuanc</a></li>
+            <li><a href="#contacto">Atención por WhatsApp</a></li>
+            <li><a href="#contacto">Jr. Cajamarca 291, Huancayo</a></li>
+          </ul>
+        </div>
+
+        <!-- Sistema y Métricas -->
+        <div class="footer-col">
+          <h4>Sistema Interactivo</h4>
+          <ul class="footer-links-list">
+            <li><a href="javascript:void(0)" onclick="openMetricsModal()">Indicadores del Sistema</a></li>
+            <li><a href="javascript:void(0)" onclick="openCartDrawer()">Ver Pedido Actual</a></li>
+            <li><a href="#como-comprar">Condiciones de Despacho</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 Piojitos Kids. Todos los derechos reservados. Fabricado en Huancayo, Junín, Perú.
+        </div>
+        <div>
+          Diseño Futurista &amp; Catálogo Digital Interactivo.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       JAVASCRIPT PURO (LÓGICA DEL CATÁLOGO, CARRITO, WHATSAPP & MÉTRICAS)
+       ========================================================================== -->
+  <script>
+    /* ==========================================================================
+       A. CONSTANTE OFICIAL DE WHATSAPP
+       De acuerdo al requerimiento: número vacío por defecto.
+       No inventar el número. Si está vacío, se permite copiar el mensaje y se muestra aviso.
+       ========================================================================== */
+    const WHATSAPP_NUMBER = "";
+
+    /* ==========================================================================
+       B. CATÁLOGO DE 12 PRENDAS FICTICIAS ENFOCADAS EN CHOMPAS & ROPA INFANTIL
+       ========================================================================== */
+    const PRODUCTS = [
+      {
+        id: "pk-01",
+        name: "Chompa Cyber-Knit Andino Neo",
+        category: "Chompas Tejidas",
+        categorySlug: "chompas",
+        price: 45.00,
+        badge: "Diseño Exclusivo",
+        description: "Chompa de tejido acanalado denso con hilado antialérgico de alta retención térmica. Inspirada en la geometría textil andina con contrastes modernos en azul eléctrico y violeta.",
+        specs: [
+          "Hilado 100% hipoalergénico suave",
+          "Punto doble frontal térmico",
+          "Puños y pretina indeformables",
+          "Fabricado en Huancayo, Junín"
+        ],
+        image: "https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?auto=format&fit=crop&w=700&q=80",
+        sizes: ["Talla 4", "Talla 6", "Talla 8", "Talla 10", "Talla 12"],
+        colors: [
+          { name: "Azul Eléctrico", hex: "#0066FF" },
+          { name: "Violeta Neón", hex: "#8B5CF6" },
+          { name: "Negro Cosmos", hex: "#111827" }
+        ]
+      },
+      {
+        id: "pk-02",
+        name: "Cardigan Aurora Holo-Wool",
+        category: "Chompas Tejidas",
+        categorySlug: "chompas",
+        price: 48.00,
+        badge: "Top TikTok",
+        description: "Cardigan suave con capucha y botones de fácil agarre. Tejido en punto trenzado tridimensional que ofrece máxima calidez sin añadir peso excesivo para los más pequeños.",
+        specs: [
+          "Capucha térmica envolvente",
+          "Botones reforzados de alta durabilidad",
+          "Tejido flexible sin sensación de picazón",
+          "Ideal para mañanas y noches frías"
+        ],
+        image: "https://images.unsplash.com/photo-1519457431-44ccd64a579b?auto=format&fit=crop&w=700&q=80",
+        sizes: ["Talla 2", "Talla 4", "Talla 6", "Talla 8", "Talla 10"],
+        colors: [
+          { name: "Celeste Neón", hex: "#00F0FF" },
+          { name: "Lila Digital", hex: "#A855F7" },
+          { name: "Blanco Glaciar", hex: "#F8FAFC" }
+        ]
+      },
+      {
+        id: "pk-03",
+        name: "Polerón Tech-Fleece Quantum",
+        category: "Polerones & Hoodies",
+        categorySlug: "polerones",
+        price: 42.00,
+        badge: "Colección Futura",
+        description: "Polerón con capucha ergonómica confeccionado en fleece de algodón perchado pesado. Incorpora bolsillo canguro frontal con remates dobles y rib elástico de alto soporte.",
+        specs: [
+          "Algodón perchado reactivo 320g",
+          "Bolsillo canguro amplio",
+          "Interior afelpado ultra suave",
+          "Resistente a lavados continuos"
+        ],
+        image: "https://images.unsplash.com/photo-1503919545889-aef636e10ad4?auto=format&fit=crop&w=700&q=80",
+        sizes: ["Talla 4", "Talla 6", "Talla 8", "Talla 10", "Talla 12", "Talla 14"],
+        colors: [
+          { name: "Azul Cobalto", hex: "#1D4ED8" },
+          { name: "Gris Cíber", hex: "#4B5563" },
+          { name: "Verde Neón", hex: "#10B981" }
+        ]
+      },
+      {
+        id: "pk-04",
+        name: "Chompa Cuello Jorge Huancaíno Pro",
+        category: "Chompas Tejidas",
+        categorySlug: "chompas",
+        price: 39.00,
+        badge: "Tradición Renovada",
+        description: "La clásica chompa peruana de cuello alto con cremallera frontal, adaptada con un perfil aerodinámico y combinaciones cromáticas de vanguardia para climas de altura.",
+        specs: [
+          "Cuello alto con cierre suave de nylon",
+          "Tejido canalé stretch adaptable",
+          "Protector de mentón anti-roces",
+          "Aislamiento térmico superior"
+        ],
+        image: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=700&q=80",
+        sizes: ["Talla 6", "Talla 8", "Talla 10", "Talla 12", "Talla 14", "Talla 16"],
+        colors: [
+          { name: "Azul Marino", hex: "#0F172A" },
+          { name: "Cian Eléctrico", hex: "#06B6D4" },
+          { name: "Rojo Carmín", hex: "#DC2626" }
+        ]
+      },
+      {
+        id: "pk-05",
+        name: "Casaca Puffer Aero-Therm Niños",
+        category: "Casacas Térmicas",
+        categorySlug: "casacas",
+        price: 58.00,
+        badge: "Alta Protección",
+        description: "Casaca acolchada impermeable y cortaviento con forro interno de micropolar. Creada para resistir heladas andinas y lloviznas costeras manteniendo total ligereza.",
+        specs: [
+          "Exterior repelente al agua",
+          "Relleno térmico siliconado",
+          "Forro micropolar térmico",
+          "Bolsillos laterales térmicos"
+        ],
+        image: "https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&w=700&q=80",
+        sizes: ["Talla 4", "Talla 6", "Talla 8", "Talla 10", "Talla 12"],
+        colors: [
+          { name: "Azul Eléctrico", hex: "#0066FF" },
+          { name: "Violeta Tech", hex: "#7C3AED" },
+          { name: "Plata Neón", hex: "#CBD5E1" }
+        ]
+      },
+      {
+        id: "pk-06",
+        name: "Conjunto Neo-Punto Dual (Chompa + Pantalón)",
+        category: "Conjuntos Neo",
+        categorySlug: "conjuntos",
+        price: 65.00,
+        badge: "Set Completo",
+        description: "Dúo coordinado de chompa manga larga y pantalón jogger en punto elastizado suave. Perfecto para niños activos que necesitan máxima libertad de movimiento y abrigo total.",
+        specs: [
+          "Incluye chompa + jogger a juego",
+          "Cintura elástica con cordón de ajuste",
+          "Punto respirable anti-pilling",
+          "Ideal para viajes y paseos"
+        ],
+        image: "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=700&q=80",
+        sizes: ["Talla 2", "Talla 4", "Talla 6", "Talla 8"],
+        colors: [
+          { name: "Lavanda Cyber", hex: "#8B5CF6" },
+          { name: "Gris Humo", hex: "#64748B" },
+          { name: "Aqua Neón", hex: "#14B8A6" }
+        ]
+      },
+      {
+        id: "pk-07",
+        name: "Chompa Jacquard Galáctica Kids",
+        category: "Chompas Tejidas",
+        categorySlug: "chompas",
+        price: 46.00,
+        badge: "Top Ventas TikTok",
+        description: "Prenda de diseño cósmico tejida en telares industriales de alta precisión en Huancayo. El dibujo geométrico no se desgasta y conserva vivos sus contrastes de color.",
+        specs: [
+          "Tejido Jacquard computarizado",
+          "Fibras de acrílico dralón hipoalergénico",
+          "Tacto aterciopelado sin frizz",
+          "Confección 100% nacional"
+        ],
+        image: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&w=700&q=80",
+        sizes: ["Talla 4", "Talla 6", "Talla 8", "Talla 10", "Talla 12"],
+        colors: [
+          { name: "Azul Noche", hex: "#1E1B4B" },
+          { name: "Celeste Láser", hex: "#38BDF8" },
+          { name: "Fucsia Neón", hex: "#EC4899" }
+        ]
+      },
+      {
+        id: "pk-08",
+        name: "Sweater Minimalista Cyber-Core",
+        category: "Chompas Tejidas",
+        categorySlug: "chompas",
+        price: 38.00,
+        badge: "Esencial Neo",
+        description: "Suéter liso de líneas limpias con sutiles detalles en rib reflectivo en puños. Una prenda versátil, ligera y moderna para combinar con jeans, faldas o pantalones térmicos.",
+        specs: [
+          "Punto liso galga 12 fino",
+          "Cuello redondo con costura de seguridad",
+          "Fibra suave lavable a máquina",
+          "Pre-encogido para ajuste constante"
+        ],
+        image: "https://images.unsplash.com/photo-1571210862729-78a52d3779a2?auto=format&fit=crop&w=700&q=80",
+        sizes: ["Talla 4", "Talla 6", "Talla 8", "Talla 10", "Talla 14"],
+        colors: [
+          { name: "Blanco Puro", hex: "#FFFFFF" },
+          { name: "Azul Neón", hex: "#0066FF" },
+          { name: "Menta Digital", hex: "#10B981" }
+        ]
+      },
+      {
+        id: "pk-09",
+        name: "Cardigan Trenzado Andino Futura",
+        category: "Chompas Tejidas",
+        categorySlug: "chompas",
+        price: 50.00,
+        badge: "Artesanal Tech",
+        description: "El legendario punto en ocho trenzado huancaíno, ejecutado con hilados modernos que eliminan cualquier picazón. Aporta un porte elegante para eventos y uso cotidiano.",
+        specs: [
+          "Trenzado tridimensional en relieve",
+          "Apertura frontal completa con botones",
+          "Excelente elasticidad natural",
+          "Tejido en Huancayo"
+        ],
+        image: "https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?auto=format&fit=crop&w=700&q=80",
+        sizes: ["Talla 2", "Talla 4", "Talla 6", "Talla 8", "Talla 10", "Talla 12"],
+        colors: [
+          { name: "Lila Profundo", hex: "#7C3AED" },
+          { name: "Celeste Hielo", hex: "#BAE6FD" },
+          { name: "Gris Perla", hex: "#94A3B8" }
+        ]
+      },
+      {
+        id: "pk-10",
+        name: "Chompa Cangurito Térmico Cyber-Soft",
+        category: "Chompas Tejidas",
+        categorySlug: "chompas",
+        price: 44.00,
+        badge: "Favorito Niños",
+        description: "Chompa abrigadora con capucha envolvente y bolsillo frontal tipo canguro. Confeccionada con hilado de doble hebra que mantiene el calor corporal en todo momento.",
+        specs: [
+          "Doble hebra térmica compacta",
+          "Capucha con interior suave",
+          "Bolsillo canguro funcional",
+          "Tacto sedoso para piel sensible"
+        ],
+        image: "https://images.unsplash.com/photo-1519457431-44ccd64a579b?auto=format&fit=crop&w=700&q=80",
+        sizes: ["Talla 4", "Talla 6", "Talla 8", "Talla 10"],
+        colors: [
+          { name: "Magenta Cyber", hex: "#D946EF" },
+          { name: "Azul Royal", hex: "#2563EB" },
+          { name: "Negro Ónix", hex: "#0F172A" }
+        ]
+      },
+      {
+        id: "pk-11",
+        name: "Conjunto Polar Storm-Proof Kids",
+        category: "Conjuntos Neo",
+        categorySlug: "conjuntos",
+        price: 52.00,
+        badge: "Anti-Frío Extremo",
+        description: "Conjunto de chompa polar ligera con detalles en contraste y pantalón jogger con refuerzo en rodillas. Diseñado para las mañanas más gélidas de la sierra y el invierno costero.",
+        specs: [
+          "Micropolar antipilling de alta densidad",
+          "Rodillas reforzadas anti-desgaste",
+          "Secado ultra rápido",
+          "Corte holgado para máximo confort"
+        ],
+        image: "https://images.unsplash.com/photo-1503919545889-aef636e10ad4?auto=format&fit=crop&w=700&q=80",
+        sizes: ["Talla 4", "Talla 6", "Talla 8", "Talla 10", "Talla 12"],
+        colors: [
+          { name: "Cian Eléctrico", hex: "#06B6D4" },
+          { name: "Violeta Cósmico", hex: "#6D28D9" },
+          { name: "Amarillo Neón", hex: "#FACC15" }
+        ]
+      },
+      {
+        id: "pk-12",
+        name: "Chaleco Acolchado Vector Tech",
+        category: "Casacas Térmicas",
+        categorySlug: "casacas",
+        price: 36.00,
+        badge: "Ligereza & Abrigo",
+        description: "Chaleco acolchado con cuello subido y sisa elástica. Permite combinarse perfectamente sobre cualquiera de nuestras chompas para lograr un look futurista en capas.",
+        specs: [
+          "Relleno térmico termofijado",
+          "Cremallera frontal reforzada",
+          "Cuello térmico ergonómico",
+          "Bolsillos con cierre oculto"
+        ],
+        image: "https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&w=700&q=80",
+        sizes: ["Talla 4", "Talla 6", "Talla 8", "Talla 10", "Talla 12", "Talla 14"],
+        colors: [
+          { name: "Azul Eléctrico", hex: "#0066FF" },
+          { name: "Negro Carbón", hex: "#18181B" },
+          { name: "Blanco Glaciar", hex: "#F8FAFC" }
+        ]
+      }
+    ];
+
+    /* ==========================================================================
+       C. GENERADOR DE RESPALDO SVG VECTORIAL PARA IMÁGENES
+       Garantiza que ninguna imagen aparezca rota si falla la conexión externa.
+       ========================================================================== */
+    function getSvgFallback(title) {
+      const safeTitle = (title || 'Piojitos Kids').substring(0, 22);
+      const svg = `
+        <svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+          <defs>
+            <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#080e26"/>
+              <stop offset="50%" stop-color="#121e4a"/>
+              <stop offset="100%" stop-color="#050817"/>
+            </linearGradient>
+            <linearGradient id="cyberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#00F0FF"/>
+              <stop offset="50%" stop-color="#0066FF"/>
+              <stop offset="100%" stop-color="#8B5CF6"/>
+            </linearGradient>
+          </defs>
+          <rect width="600" height="600" fill="url(#bgGrad)"/>
+          <g opacity="0.15">
+            <line x1="50" y1="0" x2="50" y2="600" stroke="#00F0FF" stroke-width="1"/>
+            <line x1="150" y1="0" x2="150" y2="600" stroke="#00F0FF" stroke-width="1"/>
+            <line x1="250" y1="0" x2="250" y2="600" stroke="#00F0FF" stroke-width="1"/>
+            <line x1="350" y1="0" x2="350" y2="600" stroke="#00F0FF" stroke-width="1"/>
+            <line x1="450" y1="0" x2="450" y2="600" stroke="#00F0FF" stroke-width="1"/>
+            <line x1="550" y1="0" x2="550" y2="600" stroke="#00F0FF" stroke-width="1"/>
+            <line x1="0" y1="100" x2="600" y2="100" stroke="#00F0FF" stroke-width="1"/>
+            <line x1="0" y1="200" x2="600" y2="200" stroke="#00F0FF" stroke-width="1"/>
+            <line x1="0" y1="300" x2="600" y2="300" stroke="#00F0FF" stroke-width="1"/>
+            <line x1="0" y1="400" x2="600" y2="400" stroke="#00F0FF" stroke-width="1"/>
+            <line x1="0" y1="500" x2="600" y2="500" stroke="#00F0FF" stroke-width="1"/>
+          </g>
+          <!-- Silueta Estilizada de Chompa / Prenda -->
+          <path d="M 230 140 Q 300 180 370 140 L 460 210 L 410 270 L 370 230 L 370 440 L 230 440 L 230 230 L 190 270 L 140 210 Z" 
+                fill="none" stroke="url(#cyberGrad)" stroke-width="6" stroke-linejoin="round"/>
+          <path d="M 230 140 Q 300 180 370 140" fill="none" stroke="#00F0FF" stroke-width="4"/>
+          <line x1="230" y1="420" x2="370" y2="420" stroke="#00F0FF" stroke-width="3"/>
+          <circle cx="300" cy="300" r="140" fill="none" stroke="rgba(139, 92, 246, 0.4)" stroke-dasharray="8 6"/>
+          <!-- Rótulo del Producto -->
+          <text x="300" y="490" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="24" font-weight="700" text-anchor="middle">${safeTitle}</text>
+          <text x="300" y="525" fill="#00F0FF" font-family="'Space Grotesk', sans-serif" font-size="16" letter-spacing="3" text-anchor="middle">PIOJITOS KIDS • HUANCAYO</text>
+        </svg>
+      `;
+      return "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svg.trim());
+    }
+
+    /* ==========================================================================
+       D. ESTADO DE LA APLICACIÓN & PERSISTENCIA LOCALSTORAGE
+       ========================================================================== */
+    const STORAGE_KEYS = {
+      CART: "piojitos_kids_cart_v2",
+      METRICS: "piojitos_kids_metrics_v2"
+    };
+
+    // Estado del Carrito
+    let cart = [];
+    try {
+      const savedCart = localStorage.getItem(STORAGE_KEYS.CART);
+      if (savedCart) cart = JSON.parse(savedCart);
+    } catch (e) {
+      console.warn("No se pudo cargar el carrito previo:", e);
+    }
+
+    // Estado de Métricas
+    let metrics = {
+      detailClicks: 0,
+      cartAdds: 0,
+      waQueries: 0,
+      ordersPrepared: 0,
+      productInteractions: {}
+    };
+    try {
+      const savedMetrics = localStorage.getItem(STORAGE_KEYS.METRICS);
+      if (savedMetrics) metrics = JSON.parse(savedMetrics);
+    } catch (e) {
+      console.warn("No se pudieron cargar las métricas previas:", e);
+    }
+
+    function saveCart() {
+      try {
+        localStorage.setItem(STORAGE_KEYS.CART, JSON.stringify(cart));
+      } catch (e) {
+        console.error("Error guardando carrito:", e);
+      }
+      updateCartUI();
+    }
+
+    function saveMetrics() {
+      try {
+        localStorage.setItem(STORAGE_KEYS.METRICS, JSON.stringify(metrics));
+      } catch (e) {
+        console.error("Error guardando métricas:", e);
+      }
+      updateMetricsHUD();
+    }
+
+    /* ==========================================================================
+       E. FILTRADO & RENDERIZADO DEL CATÁLOGO
+       ========================================================================== */
+    const activeFilters = {
+      search: "",
+      category: "all",
+      size: "all",
+      color: "all",
+      sort: "featured"
+    };
+
+    const productsGrid = document.getElementById("productsGrid");
+    const productsCountDisplay = document.getElementById("productsCountDisplay");
+    const searchInput = document.getElementById("searchInput");
+    const btnClearSearch = document.getElementById("btnClearSearch");
+    const sortSelect = document.getElementById("sortSelect");
+
+    function renderCatalog() {
+      // Filtrado
+      let filtered = PRODUCTS.filter(product => {
+        // Búsqueda de texto
+        if (activeFilters.search) {
+          const query = activeFilters.search.toLowerCase().trim();
+          const matchTitle = product.name.toLowerCase().includes(query);
+          const matchDesc = product.description.toLowerCase().includes(query);
+          const matchCat = product.category.toLowerCase().includes(query);
+          const matchSku = product.id.toLowerCase().includes(query);
+          if (!matchTitle && !matchDesc && !matchCat && !matchSku) return false;
+        }
+
+        // Categoría
+        if (activeFilters.category !== "all" && product.categorySlug !== activeFilters.category) {
+          return false;
+        }
+
+        // Talla
+        if (activeFilters.size !== "all" && !product.sizes.includes(activeFilters.size)) {
+          return false;
+        }
+
+        // Color
+        if (activeFilters.color !== "all") {
+          const hasColor = product.colors.some(c => c.name.toLowerCase().includes(activeFilters.color.toLowerCase()));
+          if (!hasColor) return false;
+        }
+
+        return true;
+      });
+
+      // Ordenamiento
+      if (activeFilters.sort === "price-asc") {
+        filtered.sort((a, b) => a.price - b.price);
+      } else if (activeFilters.sort === "price-desc") {
+        filtered.sort((a, b) => b.price - a.price);
+      } else if (activeFilters.sort === "name-asc") {
+        filtered.sort((a, b) => a.name.localeCompare(b.name));
+      }
+
+      // Conteo
+      productsCountDisplay.innerText = filtered.length;
+
+      // Renderizado
+      if (filtered.length === 0) {
+        productsGrid.innerHTML = `
+          <div class="empty-catalog-state">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              <line x1="8" y1="11" x2="14" y2="11"/>
+            </svg>
+            <h3>No encontramos prendas con esos filtros</h3>
+            <p>Prueba buscando con otros términos o restablece los filtros de talla y categoría.</p>
+            <button class="btn-cyber-outline" onclick="resetFilters()">Restablecer Filtros</button>
+          </div>
+        `;
+        return;
+      }
+
+      productsGrid.innerHTML = filtered.map(product => {
+        // Colores en HTML
+        const colorsHtml = product.colors.map(col => 
+          `<span class="card-color-dot" style="background-color: ${col.hex};" title="${col.name}"></span>`
+        ).join("");
+
+        // Tallas resumen
+        const sizesSummary = `${product.sizes[0]} - ${product.sizes[product.sizes.length - 1]}`;
+
+        return `
+          <article class="product-card" onclick="openProductDetail('${product.id}')" data-id="${product.id}" tabindex="0" aria-label="Ver detalle de ${product.name}">
+            <div class="card-media-wrap">
+              <span class="card-badge-tag">${product.badge}</span>
+              <img src="${product.image}" 
+                   alt="${product.name} - Piojitos Kids Huancayo" 
+                   class="card-product-img"
+                   loading="lazy"
+                   onerror="this.onerror=null; this.src=getSvgFallback('${product.name}');">
+              <span class="card-category-tag">${product.category}</span>
+            </div>
+
+            <div class="card-info-wrap">
+              <div>
+                <h3 class="card-title">${product.name}</h3>
+                <p class="card-desc">${product.description}</p>
+              </div>
+
+              <div>
+                <div class="card-meta-row">
+                  <div class="card-colors">
+                    ${colorsHtml}
+                  </div>
+                  <span class="card-sizes-preview">${sizesSummary}</span>
+                </div>
+
+                <div class="card-action-row">
+                  <div class="card-price">
+                    <span class="card-price-label">Precio</span>
+                    <div class="card-price-val"><small>S/.</small>${product.price.toFixed(2)}</div>
+                  </div>
+
+                  <div class="card-btns-cluster">
+                    <button class="btn-quick-detail" onclick="event.stopPropagation(); openProductDetail('${product.id}')">
+                      Detalle
+                    </button>
+                    <button class="btn-quick-add" onclick="event.stopPropagation(); quickAddToCart('${product.id}')" title="Añadir a lista" aria-label="Añadir al pedido">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        `;
+      }).join("");
+
+      // Inicializar microinteracción 3D Tilt en tarjetas
+      initCardsTilt();
+    }
+
+    /* ==========================================================================
+       F. MODAL DE DETALLE DE PRODUCTO
+       ========================================================================== */
+    let currentModalProduct = null;
+    let selectedModalSize = null;
+    let selectedModalColor = null;
+    let modalQuantity = 1;
+
+    const productModalBackdrop = document.getElementById("productModalBackdrop");
+    const modalProductImg = document.getElementById("modalProductImg");
+    const modalProductSku = document.getElementById("modalProductSku");
+    const modalCategoryBadge = document.getElementById("modalCategoryBadge");
+    const modalProductTitle = document.getElementById("modalProductTitle");
+    const modalProductPrice = document.getElementById("modalProductPrice");
+    const modalProductDesc = document.getElementById("modalProductDesc");
+    const modalSpecsList = document.getElementById("modalSpecsList");
+    const modalSizeGrid = document.getElementById("modalSizeGrid");
+    const modalColorGrid = document.getElementById("modalColorGrid");
+    const modalSelectedSizeText = document.getElementById("modalSelectedSizeText");
+    const modalSelectedColorText = document.getElementById("modalSelectedColorText");
+    const modalQtyInput = document.getElementById("modalQtyInput");
+    const modalSubtotalDisplay = document.getElementById("modalSubtotalDisplay");
+
+    function openProductDetail(productId) {
+      const product = PRODUCTS.find(p => p.id === productId);
+      if (!product) return;
+
+      currentModalProduct = product;
+      selectedModalSize = product.sizes[0];
+      selectedModalColor = product.colors[0];
+      modalQuantity = 1;
+
+      // Registrar métrica de clic en detalle
+      recordInteraction(product.id, "detail");
+
+      // Rellenar datos
+      modalProductTitle.innerText = product.name;
+      modalProductSku.innerText = `SKU: ${product.id.toUpperCase()}`;
+      modalCategoryBadge.innerText = product.category.toUpperCase();
+      modalProductPrice.innerText = product.price.toFixed(2);
+      modalProductDesc.innerText = product.description;
+
+      modalProductImg.src = product.image;
+      modalProductImg.alt = `${product.name} - Piojitos Kids`;
+      modalProductImg.onerror = function() {
+        this.onerror = null;
+        this.src = getSvgFallback(product.name);
+      };
+
+      // Ficha Técnica
+      modalSpecsList.innerHTML = product.specs.map(spec => `<li>${spec}</li>`).join("");
+
+      // Render de Tallas
+      modalSizeGrid.innerHTML = product.sizes.map(size => `
+        <button class="modal-size-btn ${size === selectedModalSize ? 'active' : ''}" onclick="selectModalSize('${size}')">
+          ${size}
+        </button>
+      `).join("");
+      modalSelectedSizeText.innerText = selectedModalSize;
+
+      // Render de Colores
+      modalColorGrid.innerHTML = product.colors.map(col => `
+        <button class="modal-color-btn ${col.name === selectedModalColor.name ? 'active' : ''}" onclick="selectModalColor('${col.name}')">
+          <span class="modal-color-swatch" style="background-color: ${col.hex};"></span>
+          <span>${col.name}</span>
+        </button>
+      `).join("");
+      modalSelectedColorText.innerText = selectedModalColor.name;
+
+      // Cantidad y subtotal
+      modalQtyInput.value = modalQuantity;
+      updateModalSubtotal();
+
+      // Configurar botones de acción
+      document.getElementById("btnModalAddToCart").onclick = addModalProductToCart;
+      document.getElementById("btnModalWaInquiry").onclick = consultModalProductOnWa;
+
+      // Mostrar modal
+      productModalBackdrop.classList.add("active");
+      productModalBackdrop.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeProductDetail() {
+      productModalBackdrop.classList.remove("active");
+      productModalBackdrop.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+      currentModalProduct = null;
+    }
+
+    function selectModalSize(size) {
+      selectedModalSize = size;
+      modalSelectedSizeText.innerText = size;
+      const buttons = modalSizeGrid.querySelectorAll(".modal-size-btn");
+      buttons.forEach(btn => {
+        btn.classList.toggle("active", btn.innerText.trim() === size);
+      });
+    }
+
+    function selectModalColor(colorName) {
+      if (!currentModalProduct) return;
+      const colObj = currentModalProduct.colors.find(c => c.name === colorName);
+      if (colObj) {
+        selectedModalColor = colObj;
+        modalSelectedColorText.innerText = colObj.name;
+        const buttons = modalColorGrid.querySelectorAll(".modal-color-btn");
+        buttons.forEach(btn => {
+          btn.classList.toggle("active", btn.innerText.includes(colObj.name));
+        });
+      }
+    }
+
+    function changeModalQty(delta) {
+      modalQuantity = Math.max(1, Math.min(50, modalQuantity + delta));
+      modalQtyInput.value = modalQuantity;
+      updateModalSubtotal();
+    }
+
+    function updateModalSubtotal() {
+      if (!currentModalProduct) return;
+      const subtotal = currentModalProduct.price * modalQuantity;
+      modalSubtotalDisplay.innerText = `S/. ${subtotal.toFixed(2)}`;
+    }
+
+    function addModalProductToCart() {
+      if (!currentModalProduct) return;
+
+      addItemToCart(currentModalProduct, selectedModalSize, selectedModalColor, modalQuantity);
+      closeProductDetail();
+      showToast(`¡${currentModalProduct.name} agregada al pedido!`);
+      openCartDrawer();
+    }
+
+    function consultModalProductOnWa() {
+      if (!currentModalProduct) return;
+
+      recordInteraction(currentModalProduct.id, "wa_query");
+      metrics.waQueries++;
+      saveMetrics();
+
+      const message = `Hola Mario Sanchez / Piojitos Kids, estoy explorando su catálogo digital y deseo consultar disponibilidad para la siguiente prenda:
+• *Prenda:* ${currentModalProduct.name} (${currentModalProduct.id.toUpperCase()})
+• *Talla:* ${selectedModalSize}
+• *Color:* ${selectedModalColor.name}
+• *Cantidad aproximada:* ${modalQuantity}
+• *Precio catálogo:* S/. ${currentModalProduct.price.toFixed(2)} c/u
+
+¿Tienen stock disponible para coordinar el envío a mi ciudad? Gracias.`;
+
+      dispatchWhatsAppMessage(message);
+    }
+
+    /* ==========================================================================
+       G. GESTIÓN DEL CARRITO DE COMPRAS & LOCALSTORAGE
+       ========================================================================== */
+    const cartDrawerBackdrop = document.getElementById("cartDrawerBackdrop");
+    const cartItemsList = document.getElementById("cartItemsList");
+    const cartBadgeCount = document.getElementById("cartBadgeCount");
+    const cartHeaderCountBadge = document.getElementById("cartHeaderCountBadge");
+    const cartSubtotalText = document.getElementById("cartSubtotalText");
+    const cartGrandTotalText = document.getElementById("cartGrandTotalText");
+    const waEmptyNotice = document.getElementById("waEmptyNotice");
+    const btnDispatchText = document.getElementById("btnDispatchText");
+
+    function openCartDrawer() {
+      cartDrawerBackdrop.classList.add("active");
+      cartDrawerBackdrop.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeCartDrawer() {
+      cartDrawerBackdrop.classList.remove("active");
+      cartDrawerBackdrop.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+    }
+
+    function quickAddToCart(productId) {
+      const product = PRODUCTS.find(p => p.id === productId);
+      if (!product) return;
+
+      addItemToCart(product, product.sizes[0], product.colors[0], 1);
+      showToast(`¡${product.name} agregada al pedido!`);
+    }
+
+    function addItemToCart(product, size, color, quantity) {
+      const existingIndex = cart.findIndex(item => 
+        item.productId === product.id && item.size === size && item.color.name === color.name
+      );
+
+      if (existingIndex > -1) {
+        cart[existingIndex].quantity += quantity;
+      } else {
+        cart.push({
+          productId: product.id,
+          name: product.name,
+          category: product.category,
+          price: product.price,
+          image: product.image,
+          size: size,
+          color: color,
+          quantity: quantity
+        });
+      }
+
+      // Registro de métrica
+      recordInteraction(product.id, "cart_add");
+      metrics.cartAdds += quantity;
+      saveMetrics();
+
+      saveCart();
+    }
+
+    function updateCartItemQty(index, delta) {
+      if (!cart[index]) return;
+      cart[index].quantity += delta;
+      if (cart[index].quantity <= 0) {
+        cart.splice(index, 1);
+        showToast("Prenda eliminada del pedido.");
+      }
+      saveCart();
+    }
+
+    function removeCartItem(index) {
+      if (!cart[index]) return;
+      cart.splice(index, 1);
+      showToast("Prenda eliminada del pedido.");
+      saveCart();
+    }
+
+    function updateCartUI() {
+      // Contador total de unidades
+      const totalUnits = cart.reduce((acc, item) => acc + item.quantity, 0);
+      cartBadgeCount.innerText = totalUnits;
+      cartHeaderCountBadge.innerText = `${totalUnits} prendas`;
+
+      // Calcular montos
+      const grandTotal = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
+      cartSubtotalText.innerText = `S/. ${grandTotal.toFixed(2)}`;
+      cartGrandTotalText.innerText = `S/. ${grandTotal.toFixed(2)}`;
+
+      // Verificar estado de WHATSAPP_NUMBER
+      if (WHATSAPP_NUMBER && WHATSAPP_NUMBER.trim() !== "") {
+        waEmptyNotice.style.display = "none";
+        btnDispatchText.innerText = "Enviar Pedido a WhatsApp";
+      } else {
+        waEmptyNotice.style.display = "flex";
+        btnDispatchText.innerText = "Generar / Enviar Pedido";
+      }
+
+      // Render de items
+      if (cart.length === 0) {
+        cartItemsList.innerHTML = `
+          <div class="cart-empty-state">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+            </svg>
+            <h4>Tu lista está vacía</h4>
+            <p>Explora nuestro catálogo digital y selecciona tus chompas favoritas.</p>
+            <button class="btn-cyber-primary" onclick="closeCartDrawer(); window.location.href='#catalogo';">
+              Explorar Catálogo
+            </button>
+          </div>
+        `;
+        document.getElementById("cartCheckoutSection").style.display = "none";
+        return;
+      }
+
+      document.getElementById("cartCheckoutSection").style.display = "flex";
+
+      cartItemsList.innerHTML = cart.map((item, index) => {
+        const itemSubtotal = item.price * item.quantity;
+        return `
+          <div class="cart-item-card">
+            <div class="cart-item-thumb">
+              <img src="${item.image}" alt="${item.name}" onerror="this.onerror=null; this.src=getSvgFallback('${item.name}');">
+            </div>
+
+            <div class="cart-item-details">
+              <h4>${item.name}</h4>
+              <div class="cart-item-meta">
+                <span class="cart-meta-badge">${item.size}</span>
+                <span style="display: inline-flex; align-items: center; gap: 4px;">
+                  <span style="width: 10px; height: 10px; border-radius: 50%; background: ${item.color.hex}; display: inline-block;"></span>
+                  ${item.color.name}
+                </span>
+              </div>
+              <div class="cart-item-stepper">
+                <button class="cart-btn-stepper" onclick="updateCartItemQty(${index}, -1)" aria-label="Disminuir">-</button>
+                <span class="cart-stepper-val">${item.quantity}</span>
+                <button class="cart-btn-stepper" onclick="updateCartItemQty(${index}, 1)" aria-label="Aumentar">+</button>
+              </div>
+            </div>
+
+            <div class="cart-item-subtotal-col">
+              <span class="cart-item-subtotal">S/. ${itemSubtotal.toFixed(2)}</span>
+              <button class="btn-remove-item" onclick="removeCartItem(${index})" title="Quitar prenda" aria-label="Eliminar prenda">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    /* ==========================================================================
+       H. GENERACIÓN DEL MENSAJE DE PEDIDO & DESPACHO A WHATSAPP
+       ========================================================================== */
+    function buildOrderMessageText() {
+      if (cart.length === 0) return null;
+
+      const custName = document.getElementById("orderCustomerName").value.trim() || "Cliente no especificado";
+      const custCity = document.getElementById("orderCustomerCity").value.trim() || "Ciudad por confirmar";
+      const custAddress = document.getElementById("orderCustomerAddress").value.trim();
+      const custNotes = document.getElementById("orderCustomerNotes").value.trim();
+
+      const grandTotal = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
+
+      let text = `🚀 *PEDIDO - PIOJITOS KIDS (CATÁLOGO DIGITAL)*\n`;
+      text += `📅 *Fecha:* ${new Date().toLocaleDateString('es-PE')}\n`;
+      text += `📍 *Cliente:* ${custName}\n`;
+      text += `🏙️ *Destino:* ${custCity}\n`;
+      if (custAddress) text += `📦 *Dirección / Agencia:* ${custAddress}\n`;
+      if (custNotes) text += `📝 *Notas:* ${custNotes}\n`;
+      text += `\n🛍️ *PRENDAS SOLICITADAS:*\n`;
+
+      cart.forEach((item, i) => {
+        const sub = item.price * item.quantity;
+        text += `${i + 1}. *${item.name}*\n`;
+        text += `   • Talla: ${item.size} | Color: ${item.color.name}\n`;
+        text += `   • Cantidad: ${item.quantity} | Subtotal: S/. ${sub.toFixed(2)}\n`;
+      });
+
+      text += `\n💰 *TOTAL ESTIMADO:* S/. ${grandTotal.toFixed(2)} PEN\n`;
+      text += `\n*(La disponibilidad de stock, medios de pago y costos de envío se confirmarán directamente con Mario Sanchez / Piojitos Kids)*`;
+
+      return text;
+    }
+
+    function processOrderToWhatsApp() {
+      if (cart.length === 0) {
+        showToast("Tu carrito está vacío. Agrega prendas primero.");
+        return;
+      }
+
+      const nameInput = document.getElementById("orderCustomerName");
+      const cityInput = document.getElementById("orderCustomerCity");
+
+      if (!nameInput.value.trim() || !cityInput.value.trim()) {
+        showToast("Por favor ingresa tu Nombre y Ciudad de entrega.");
+        nameInput.focus();
+        return;
+      }
+
+      // Registrar métrica
+      metrics.ordersPrepared++;
+      saveMetrics();
+
+      const messageText = buildOrderMessageText();
+      dispatchWhatsAppMessage(messageText);
+    }
+
+    function copyOrderSummaryToClipboard() {
+      const messageText = buildOrderMessageText();
+      if (!messageText) {
+        showToast("No hay prendas en el pedido para copiar.");
+        return;
+      }
+
+      navigator.clipboard.writeText(messageText).then(() => {
+        showToast("¡Pedido copiado al portapapeles! Puedes pegarlo en WhatsApp.");
+        metrics.ordersPrepared++;
+        saveMetrics();
+      }).catch(err => {
+        console.error("Error al copiar:", err);
+        showToast("No se pudo copiar automáticamente. Intenta de nuevo.");
+      });
+    }
+
+    function dispatchWhatsAppMessage(messageText) {
+      if (WHATSAPP_NUMBER && WHATSAPP_NUMBER.trim() !== "") {
+        // Número configurado oficialmente
+        const cleanNumber = WHATSAPP_NUMBER.replace(/\D/g, '');
+        const waUrl = `https://wa.me/${cleanNumber}?text=${encodeURIComponent(messageText)}`;
+        window.open(waUrl, "_blank", "noopener,noreferrer");
+        showToast("Abriendo WhatsApp oficial...");
+      } else {
+        // WHATSAPP_NUMBER está vacío: permitir copiar con un clic y mostrar aviso formal
+        navigator.clipboard.writeText(messageText).then(() => {
+          showToast("Aviso: Número en configuración. ¡Mensaje copiado al portapapeles para tu WhatsApp!");
+        }).catch(() => {
+          showToast("Aviso: Número de WhatsApp pendiente de asignación.");
+        });
+
+        // Abrir también WhatsApp Web o aplicación con el texto precargado para que el usuario elija su contacto
+        const genericWaUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(messageText)}`;
+        window.open(genericWaUrl, "_blank", "noopener,noreferrer");
+      }
+    }
+
+    function handleDirectInquiry(event) {
+      event.preventDefault();
+      const name = document.getElementById("inquiryName").value.trim();
+      const city = document.getElementById("inquiryCity").value.trim();
+      const topic = document.getElementById("inquiryTopic").value;
+      const message = document.getElementById("inquiryMessage").value.trim();
+
+      metrics.waQueries++;
+      saveMetrics();
+
+      let text = `👋 *CONSULTA - PIOJITOS KIDS (DESDE WEB)*\n`;
+      text += `👤 *Nombre:* ${name}\n`;
+      text += `📍 *Ciudad:* ${city}\n`;
+      text += `📌 *Asunto:* ${topic}\n`;
+      if (message) text += `💬 *Detalle:* ${message}\n`;
+
+      dispatchWhatsAppMessage(text);
+    }
+
+    /* ==========================================================================
+       I. REGISTRO & DASHBOARD DE MÉTRICAS DEMOSTRATIVAS
+       ========================================================================== */
+    function recordInteraction(productId, type) {
+      if (!metrics.productInteractions[productId]) {
+        metrics.productInteractions[productId] = { detail: 0, cart_add: 0, wa_query: 0 };
+      }
+      if (type === "detail") {
+        metrics.detailClicks++;
+        metrics.productInteractions[productId].detail++;
+      } else if (type === "cart_add") {
+        metrics.productInteractions[productId].cart_add++;
+      } else if (type === "wa_query") {
+        metrics.productInteractions[productId].wa_query++;
+      }
+      saveMetrics();
+    }
+
+    function updateMetricsHUD() {
+      const elClicks = document.getElementById("metricDetailClicks");
+      const elAdds = document.getElementById("metricCartAdds");
+      const elWa = document.getElementById("metricWaQueries");
+      const elOrders = document.getElementById("metricOrdersPrepared");
+      const elList = document.getElementById("metricsTopList");
+
+      if (elClicks) elClicks.innerText = metrics.detailClicks;
+      if (elAdds) elAdds.innerText = metrics.cartAdds;
+      if (elWa) elWa.innerText = metrics.waQueries;
+      if (elOrders) elOrders.innerText = metrics.ordersPrepared;
+
+      // Calcular Top Productos
+      if (elList) {
+        const entries = Object.entries(metrics.productInteractions);
+        if (entries.length === 0) {
+          elList.innerHTML = `<li style="font-size: 0.85rem; color: var(--color-text-dim);">Aún no hay interacciones registradas en esta sesión.</li>`;
+          return;
+        }
+
+        // Ordenar por score combinado: detail (1pt) + cart_add (3pts) + wa_query (4pts)
+        entries.sort((a, b) => {
+          const scoreA = (a[1].detail * 1) + (a[1].cart_add * 3) + (a[1].wa_query * 4);
+          const scoreB = (b[1].detail * 1) + (b[1].cart_add * 3) + (b[1].wa_query * 4);
+          return scoreB - scoreA;
+        });
+
+        const top3 = entries.slice(0, 4);
+        elList.innerHTML = top3.map(([prodId, data]) => {
+          const prod = PRODUCTS.find(p => p.id === prodId);
+          const name = prod ? prod.name : prodId;
+          const totalPoints = (data.detail * 1) + (data.cart_add * 3) + (data.wa_query * 4);
+          return `
+            <li class="top-product-item">
+              <span><strong>${name}</strong> <small style="color: var(--color-text-dim);">(${data.detail} vistas, ${data.cart_add} en carrito)</small></span>
+              <span class="top-product-score">${totalPoints} pts</span>
+            </li>
+          `;
+        }).join("");
+      }
+    }
+
+    function resetMetrics() {
+      metrics = {
+        detailClicks: 0,
+        cartAdds: 0,
+        waQueries: 0,
+        ordersPrepared: 0,
+        productInteractions: {}
+      };
+      saveMetrics();
+      showToast("Métricas demostrativas restablecidas a cero.");
+    }
+
+    const metricsModalBackdrop = document.getElementById("metricsModalBackdrop");
+    function openMetricsModal() {
+      updateMetricsHUD();
+      metricsModalBackdrop.classList.add("active");
+      metricsModalBackdrop.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+    }
+    function closeMetricsModal() {
+      metricsModalBackdrop.classList.remove("active");
+      metricsModalBackdrop.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+    }
+
+    /* ==========================================================================
+       J. TOAST NOTIFICATIONS & MICROINTERACCIONES
+       ========================================================================== */
+    function showToast(message) {
+      const container = document.getElementById("toastContainer");
+      const toast = document.createElement("div");
+      toast.className = "toast-msg";
+      toast.innerHTML = `
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="20 6 9 17 4 12"/>
+        </svg>
+        <span>${message}</span>
+      `;
+      container.appendChild(toast);
+
+      setTimeout(() => {
+        toast.style.opacity = "0";
+        toast.style.transform = "translateY(15px)";
+        toast.style.transition = "0.3s ease";
+        setTimeout(() => toast.remove(), 300);
+      }, 3500);
+    }
+
+    /* ==========================================================================
+       K. EFECTO 3D TILT EN HERO & TARJETAS (PURE CSS/JS SIN LIBRERÍAS EXTERNAS)
+       ========================================================================== */
+    function initHeroCardTilt() {
+      const container = document.getElementById("heroCardContainer");
+      const card = document.getElementById("heroCard");
+      if (!container || !card) return;
+
+      container.addEventListener("mousemove", (e) => {
+        const rect = container.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        const rotateX = ((y - centerY) / centerY) * -14;
+        const rotateY = ((x - centerX) / centerX) * 14;
+
+        card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+      });
+
+      container.addEventListener("mouseleave", () => {
+        card.style.transform = "rotateX(0deg) rotateY(0deg)";
+      });
+    }
+
+    function initCardsTilt() {
+      const cards = document.querySelectorAll(".product-card");
+      cards.forEach(card => {
+        card.addEventListener("mousemove", (e) => {
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          const centerX = rect.width / 2;
+          const centerY = rect.height / 2;
+
+          const rotateX = ((y - centerY) / centerY) * -8;
+          const rotateY = ((x - centerX) / centerX) * 8;
+
+          card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px)`;
+        });
+
+        card.addEventListener("mouseleave", () => {
+          card.style.transform = "";
+        });
+      });
+    }
+
+    /* ==========================================================================
+       L. FILTRADO RÁPIDO DESDE COLECCIONES & CONTROLES
+       ========================================================================== */
+    function filterByCategory(categorySlug) {
+      activeFilters.category = categorySlug;
+
+      // Actualizar pills visuales
+      const pills = document.querySelectorAll(".category-pill");
+      pills.forEach(pill => {
+        pill.classList.toggle("active", pill.getAttribute("data-category") === categorySlug);
+      });
+
+      renderCatalog();
+
+      // Scroll suave a catálogo
+      const catSec = document.getElementById("catalogo");
+      if (catSec) {
+        catSec.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+
+    function resetFilters() {
+      activeFilters.search = "";
+      activeFilters.category = "all";
+      activeFilters.size = "all";
+      activeFilters.color = "all";
+      activeFilters.sort = "featured";
+
+      searchInput.value = "";
+      btnClearSearch.style.display = "none";
+      sortSelect.value = "featured";
+
+      document.querySelectorAll(".category-pill").forEach(p => p.classList.toggle("active", p.dataset.category === "all"));
+      document.querySelectorAll(".size-chip-filter").forEach(s => s.classList.toggle("active", s.dataset.size === "all"));
+      document.querySelectorAll(".color-swatch-filter").forEach(c => c.classList.toggle("active", c.dataset.color === "all"));
+
+      renderCatalog();
+      showToast("Filtros restablecidos.");
+    }
+
+    /* ==========================================================================
+       M. INICIALIZACIÓN GLOBAL DE EVENTOS
+       ========================================================================== */
+    document.addEventListener("DOMContentLoaded", () => {
+      // 1. Renderizar catálogo inicial
+      renderCatalog();
+      updateCartUI();
+      updateMetricsHUD();
+      initHeroCardTilt();
+
+      // 2. Búsqueda con debounce
+      searchInput.addEventListener("input", (e) => {
+        activeFilters.search = e.target.value;
+        btnClearSearch.style.display = e.target.value ? "block" : "none";
+        renderCatalog();
+      });
+
+      btnClearSearch.addEventListener("click", () => {
+        searchInput.value = "";
+        activeFilters.search = "";
+        btnClearSearch.style.display = "none";
+        renderCatalog();
+      });
+
+      // 3. Ordenamiento
+      sortSelect.addEventListener("change", (e) => {
+        activeFilters.sort = e.target.value;
+        renderCatalog();
+      });
+
+      // 4. Categorías
+      document.querySelectorAll(".category-pill").forEach(pill => {
+        pill.addEventListener("click", () => {
+          document.querySelectorAll(".category-pill").forEach(p => p.classList.remove("active"));
+          pill.classList.add("active");
+          activeFilters.category = pill.dataset.category;
+          renderCatalog();
+        });
+      });
+
+      // 5. Filtros de Talla
+      document.querySelectorAll(".size-chip-filter").forEach(chip => {
+        chip.addEventListener("click", () => {
+          document.querySelectorAll(".size-chip-filter").forEach(c => c.classList.remove("active"));
+          chip.classList.add("active");
+          activeFilters.size = chip.dataset.size;
+          renderCatalog();
+        });
+      });
+
+      // 6. Filtros de Color
+      document.querySelectorAll(".color-swatch-filter").forEach(swatch => {
+        swatch.addEventListener("click", () => {
+          document.querySelectorAll(".color-swatch-filter").forEach(s => s.classList.remove("active"));
+          swatch.classList.add("active");
+          activeFilters.color = swatch.dataset.color;
+          renderCatalog();
+        });
+      });
+
+      // 7. Botón Restablecer Filtros
+      document.getElementById("btnResetFilters").addEventListener("click", resetFilters);
+
+      // 8. Eventos de Modales y Carrito
+      document.getElementById("btnOpenCart").addEventListener("click", openCartDrawer);
+      document.getElementById("btnCloseCartDrawer").addEventListener("click", closeCartDrawer);
+      cartDrawerBackdrop.addEventListener("click", (e) => {
+        if (e.target === cartDrawerBackdrop) closeCartDrawer();
+      });
+
+      document.getElementById("btnCloseProductModal").addEventListener("click", closeProductDetail);
+      productModalBackdrop.addEventListener("click", (e) => {
+        if (e.target === productModalBackdrop) closeProductDetail();
+      });
+
+      document.getElementById("btnOpenMetrics").addEventListener("click", openMetricsModal);
+      document.getElementById("btnMobileOpenMetrics").addEventListener("click", () => {
+        toggleMobileMenu();
+        openMetricsModal();
+      });
+      document.getElementById("btnCloseMetricsModal").addEventListener("click", closeMetricsModal);
+      metricsModalBackdrop.addEventListener("click", (e) => {
+        if (e.target === metricsModalBackdrop) closeMetricsModal();
+      });
+
+      // 9. Cierre con tecla Escape
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          closeProductDetail();
+          closeCartDrawer();
+          closeMetricsModal();
+        }
+      });
+
+      // 10. Menú Móvil
+      const btnMobileToggle = document.getElementById("btnMobileToggle");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      function toggleMobileMenu() {
+        btnMobileToggle.classList.toggle("open");
+        mobileMenu.classList.toggle("open");
+      }
+
+      btnMobileToggle.addEventListener("click", toggleMobileMenu);
+
+      document.querySelectorAll(".mobile-nav-item").forEach(item => {
+        item.addEventListener("click", () => {
+          btnMobileToggle.classList.remove("open");
+          mobileMenu.classList.remove("open");
+        });
+      });
+
+      // 11. Header Scrolled Class
+      window.addEventListener("scroll", () => {
+        const header = document.getElementById("siteHeader");
+        if (window.scrollY > 40) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
